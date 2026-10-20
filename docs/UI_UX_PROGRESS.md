@@ -441,6 +441,33 @@ At the available 390px preview viewport:
 
 Phase 14 remains implemented and preview-verified, but not production-verified.
 
+## Phase 15 Update — Premium Homepage Reconstruction
+
+### Live baseline captured
+
+The deployed homepage at `https://ecu-university-website.vercel.app/` was inspected in a real browser before these changes. At the captured desktop state, the hero used abstract geometric art and exposed the text “ECU campus photography pending approval.” At the captured 390px state, the first screen showed six small quick-access tiles and the homepage contained repeated audience, story, why-ECU, empty news, continuing-education, achievements, campus and partnership sections.
+
+Baseline evidence captured:
+
+- Desktop browser screenshot at the deployed homepage.
+- Mobile browser screenshot at a 390px viewport.
+- Mobile DOM measurement: no horizontal overflow; hero height approximately 500px.
+- Homepage section inventory recorded before modification.
+
+### Reconstruction changes
+
+- Removed the public-facing media approval note from the hero while retaining media rights tracking in the internal inventory.
+- Rebuilt the hero composition with a stronger editorial index, controlled brand geometry and two clear actions.
+- Reduced quick access from six competing tiles to four priority routes.
+- Consolidated overlapping audience, “Why ECU” and ECU Experience content into one institutional story.
+- Kept the four verified featured faculties but gave the section a distinct editorial card treatment.
+- Curated the initial programme finder display to six results; search and faculty filtering still reveal matching verified results.
+- Removed incomplete continuing education, achievements, empty news, campus and repeated partnership placeholder sections from the homepage.
+- Reframed research and international cooperation as one verified editorial section.
+- Preserved existing local routes, official-source links, locale behavior and admissions pathway.
+
+The Phase 15 implementation is pushed for Vercel validation. A post-deployment browser comparison and production build result remain pending until the new deployment reaches a confirmed Ready state.
+
 ### Phase 11 verification status
 
 | Area | Result |
