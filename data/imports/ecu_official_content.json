@@ -1,0 +1,391 @@
+{
+  "project": "ECU replacement website",
+  "dataset": "official-source content research",
+  "version": "1.0",
+  "researched_on": "2026-10-20",
+  "usage_notice": "Research summaries/paraphrases only, not wholesale copies of original pages. Confirm time-sensitive claims and obtain university editorial approval before publication. No current tuition/deadline/accreditation data is asserted.",
+  "provenance_note": "Sources originate on ECU public website; page claims may be dated and must be checked against current policy.",
+  "records": [
+    {
+      "id": "uni-profile",
+      "type": "institution",
+      "title": "ECU university profile",
+      "summary": "The Egyptian Chinese University was established under Egyptian Presidential Decree No. 118 of 2013. Its published profile emphasizes applied technology, production-linked learning, innovation, and transfer of relevant Chinese experience.",
+      "source_url": "https://ecu.edu.eg/about-ecu/university-profile/",
+      "target_route": "/about",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "key_facts": [
+        "Established by Presidential Decree No. 118 (2013)",
+        "Emphasis on technological and productive education",
+        "Two Cairo campuses described in the official profile"
+      ],
+      "image_ids": [
+        "img-faculty-building"
+      ]
+    },
+    {
+      "id": "uni-mission",
+      "type": "institution",
+      "title": "University mission",
+      "summary": "ECU presents its mission as preparing graduates with professional and social competencies suited to changing labor markets, using research, productive education and practical engagement with industry.",
+      "source_url": "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/",
+      "target_route": "/about/mission",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required"
+    },
+    {
+      "id": "uni-vision",
+      "type": "institution",
+      "title": "University vision",
+      "summary": "ECU aims to be a productive, technology-based university distinguished in research, innovation, entrepreneurship, and societal contribution.",
+      "source_url": "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/",
+      "target_route": "/about/vision",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required"
+    },
+    {
+      "id": "uni-objectives",
+      "type": "institution",
+      "title": "Strategic objectives",
+      "summary": "Its stated objectives cover institutional capacity, teaching and learning, research and innovation, community and international cooperation, and continuous quality improvement.",
+      "source_url": "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/",
+      "target_route": "/about/objectives",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "items": [
+        "Effective institutional capacity",
+        "Distinguished teaching and learning",
+        "Research and innovation",
+        "Community participation and international cooperation",
+        "Quality assurance and continuous development"
+      ]
+    },
+    {
+      "id": "uni-international",
+      "type": "institution",
+      "title": "Egypt–China academic cooperation",
+      "summary": "The institutional profile discusses collaboration with universities in China, including academic program design, exchanges, research and training; partner status and current arrangements should be reconfirmed before prominent claims.",
+      "source_url": "https://ecu.edu.eg/about-ecu/university-profile/",
+      "target_route": "/international",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "partners_named_in_source": [
+        "Beijing Jiaotong University",
+        "Liaoning University",
+        "North China Electric Power University"
+      ],
+      "editorial_note": "Confirm current active agreements; source uses historical statements.",
+      "image_ids": [
+        "img-china-meeting",
+        "img-cooperation-signing"
+      ]
+    },
+    {
+      "id": "campus-heliopolis",
+      "type": "campus",
+      "title": "Heliopolis branch",
+      "summary": "Gesr El Suez Street, behind Tagneed Bridge, Cairo, Egypt.",
+      "source_url": "https://ecu.edu.eg/",
+      "target_route": "/contact",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "location": "Cairo, Egypt"
+    },
+    {
+      "id": "campus-nasr",
+      "type": "campus",
+      "title": "Nasr City branch",
+      "summary": "Al Hay Al Asher (10th District), Nasr City, Cairo, Egypt.",
+      "source_url": "https://ecu.edu.eg/",
+      "target_route": "/contact",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "location": "Cairo, Egypt"
+    },
+    {
+      "id": "admission-egypt",
+      "type": "admissions",
+      "title": "Egyptian Secondary School Certificate",
+      "summary": "Applicants must satisfy the minimum entry percentages announced by the competent private-university authority. Verify current thresholds for the relevant admissions cycle.",
+      "source_url": "https://ecu.edu.eg/about-ecu/admission/",
+      "target_route": "/admissions/egyptian-secondary",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "documents": [
+        "Original secondary school certificate",
+        "Original birth certificate",
+        "National ID copy (Egyptian applicants) or passport",
+        "Six recent passport photos with a white background",
+        "Military forms for eligible Egyptian male applicants"
+      ],
+      "freshness": "Minimum percentages vary by cycle; no threshold included."
+    },
+    {
+      "id": "admission-arab",
+      "type": "admissions",
+      "title": "Secondary certificates from Arab countries",
+      "summary": "The official guide distinguishes scientific and non-scientific certificate pathways for different faculties and adds country-specific authentication and supporting-document requirements.",
+      "source_url": "https://ecu.edu.eg/about-ecu/admission/",
+      "target_route": "/admissions/arab-certificates",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "highlights": [
+        "Scientific track specified for Physical Therapy, Pharmacy, and Engineering and Technology",
+        "Non-scientific track specified for Economics and International Trade",
+        "Foreign-document authentication may be required",
+        "Some countries have additional education-verification or cultural-attaché requirements"
+      ],
+      "freshness": "Faculty eligibility and required forms require current admission-office confirmation."
+    },
+    {
+      "id": "admission-igcse",
+      "type": "admissions",
+      "title": "IGCSE admissions",
+      "summary": "The official requirements cover qualifying O-Level subjects and, for some faculties, AS/A-Level Mathematics; they also describe certification and document authentication.",
+      "source_url": "https://ecu.edu.eg/about-ecu/admission/",
+      "target_route": "/admissions/igcse",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "highlights": [
+        "Eight qualifying subjects specified for several faculties",
+        "Engineering requirements include additional Mathematics qualifications",
+        "Minimum grade requirements and allowed exam sessions are specified on the source page"
+      ],
+      "freshness": "Check the current admission cycle and faculty-specific rules."
+    },
+    {
+      "id": "admission-american",
+      "type": "admissions",
+      "title": "American Diploma admissions",
+      "summary": "The official guidance describes eligible high-school subjects, transcript authentication, relevant standardized test records, and proof of schooling.",
+      "source_url": "https://ecu.edu.eg/about-ecu/admission/",
+      "target_route": "/admissions/american-diploma",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "freshness": "Standardized-test rules and current requirements must be rechecked."
+    },
+    {
+      "id": "admission-ib",
+      "type": "admissions",
+      "title": "International Baccalaureate admissions",
+      "summary": "The official admissions page specifies six IB subjects, including three higher-level subjects, a minimum of 24 points, and faculty-related subject requirements.",
+      "source_url": "https://ecu.edu.eg/about-ecu/admission/",
+      "target_route": "/admissions/ib",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "highlights": [
+        "Six subjects, with three at Higher Level",
+        "Minimum overall score stated as 24 out of 45",
+        "Additional Higher Level requirements for some faculties"
+      ],
+      "freshness": "Review with current ECU admissions office before publishing as current policy."
+    },
+    {
+      "id": "admission-abitur",
+      "type": "admissions",
+      "title": "Abitur admissions",
+      "summary": "The official guidance requires completion of Grade 12, an academic transcript with specified subjects, and authenticated/translated documents.",
+      "source_url": "https://ecu.edu.eg/about-ecu/admission/",
+      "target_route": "/admissions/abitur",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "freshness": "Confirm acceptance and document rules for the current cycle."
+    },
+    {
+      "id": "faculty-media",
+      "type": "faculty",
+      "title": "Faculty of Mass Communication",
+      "summary": "The faculty describes an educational focus on contemporary media practice, creativity, critical thinking and professional development.",
+      "source_url": "https://ecu.edu.eg/faculties/media/",
+      "target_route": "/faculties/mass-communication",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "departments": [
+        "Digital Journalism and Graphic Design",
+        "Audio and Visual Production",
+        "Integrated Marketing Communication"
+      ],
+      "dean_as_published": "Prof. Dr. Sara Elmaghraby",
+      "image_ids": [
+        "img-mass-dean"
+      ],
+      "editorial_note": "Academic personnel may change; verify before publication."
+    },
+    {
+      "id": "gallery-arts-workshop",
+      "type": "campus_life",
+      "title": "Arts and Design digital-technology workshop",
+      "summary": "The official photo gallery documents a Faculty of Arts and Design workshop involving contemporary digital and educational technologies.",
+      "source_url": "https://ecu.edu.eg/photo-gallery/",
+      "target_route": "/campus-life",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "image_ids": [
+        "img-arts-workshop"
+      ],
+      "date_status": "event_date_not_verified"
+    },
+    {
+      "id": "gallery-pharmacy-industry",
+      "type": "campus_life",
+      "title": "Pharmacy industry visit",
+      "summary": "The official gallery documents a student visit to SEDICO Pharmaceutical Company to observe production and control activities.",
+      "source_url": "https://ecu.edu.eg/photo-gallery/",
+      "target_route": "/campus-life",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "image_ids": [
+        "img-pharmacy-visit"
+      ],
+      "date_status": "event_date_not_verified"
+    },
+    {
+      "id": "gallery-vet-training",
+      "type": "campus_life",
+      "title": "Veterinary Medicine practical training",
+      "summary": "The official gallery includes photographs of student practical training in Veterinary Medicine.",
+      "source_url": "https://ecu.edu.eg/photo-gallery/",
+      "target_route": "/campus-life",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "image_ids": [
+        "img-vet-practical"
+      ],
+      "date_status": "event_date_not_verified"
+    },
+    {
+      "id": "gallery-books",
+      "type": "international",
+      "title": "Chinese books handover ceremony",
+      "summary": "ECU published photographs of a Chinese books handover ceremony involving Sinopec sponsorship.",
+      "source_url": "https://ecu.edu.eg/photo-gallery/",
+      "target_route": "/international",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "image_ids": [
+        "img-books-ceremony"
+      ],
+      "date_status": "event_date_not_verified"
+    },
+    {
+      "id": "gallery-cooperation",
+      "type": "international",
+      "title": "Academic cooperation visit",
+      "summary": "ECU published photographs of cooperation activities with Chinese universities.",
+      "source_url": "https://ecu.edu.eg/photo-gallery/",
+      "target_route": "/international",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "image_ids": [
+        "img-china-meeting",
+        "img-cooperation-signing"
+      ],
+      "date_status": "event_date_not_verified"
+    },
+    {
+      "id": "gallery-liverpool",
+      "type": "research",
+      "title": "One Health workshop visit",
+      "summary": "ECU documents a visit by a University of Liverpool veterinary research team associated with a One Health workshop.",
+      "source_url": "https://ecu.edu.eg/photo-gallery/",
+      "target_route": "/research",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "image_ids": [
+        "img-liverpool-visit"
+      ],
+      "date_status": "event_date_not_verified"
+    },
+    {
+      "id": "news-rally",
+      "type": "news",
+      "title": "Egypt Rally semi-finals participation",
+      "summary": "The official home page lists a news story reporting that ECU qualified for the semi-finals in the Egypt Rally competition.",
+      "source_url": "https://ecu.edu.eg/",
+      "target_route": "/news",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "date_status": "date_not_verified",
+      "editorial_note": "Obtain full article, date and official image before a detail page."
+    },
+    {
+      "id": "news-pharmacists",
+      "type": "news",
+      "title": "Cooperation with Cairo Pharmacists Syndicate",
+      "summary": "An ECU homepage item announces a cooperation protocol with the Cairo Pharmacists Syndicate.",
+      "source_url": "https://ecu.edu.eg/",
+      "target_route": "/news",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "date_status": "date_not_verified",
+      "editorial_note": "Confirm agreement date and current status before treating it as active."
+    },
+    {
+      "id": "news-shanghai",
+      "type": "news",
+      "title": "Shanghai University student visit",
+      "summary": "An ECU homepage story covers students from Shanghai University in China.",
+      "source_url": "https://ecu.edu.eg/",
+      "target_route": "/news",
+      "source_language": "en",
+      "last_checked": "2026-10-20",
+      "verification": "source_checked",
+      "editorial_status": "review_required",
+      "date_status": "date_not_verified",
+      "editorial_note": "Confirm date and details from the original story."
+    }
+  ],
+  "implementation_gaps": [
+    "Official full programme catalogue and curriculum",
+    "Published current academic staff roster across all faculties",
+    "Current intake deadlines and tuition",
+    "Editorially approved Arabic and Chinese translations",
+    "Official continuing education course listings",
+    "Rights-cleared original media library"
+  ]
+}

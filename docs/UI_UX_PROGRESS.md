@@ -482,6 +482,32 @@ Official ECU and admissions sources were checked during this phase. The local re
 
 The new routes require the next Vercel deployment for production browser verification. The local environment still lacks the installed Next.js executable, so no local production build is claimed.
 
+## Phase 17 Update — Structured Official Content Integration
+
+The supplied research inventories are now present under [data/imports](../data/imports):
+
+- `ecu_official_content.json`: 23 source-researched records.
+- `ecu_official_image_urls.json`: 11 direct image references.
+
+### Content architecture
+
+- [importedContent.js](../lib/importedContent.js) validates required fields and duplicate IDs at load time.
+- Public pages consume filtered accessors rather than reading raw inventories directly.
+- Records marked `review_required` remain visibly framed as source summaries requiring ECU editorial confirmation.
+- No record marked approved was assumed where the inventory did not provide that status.
+
+### Integrated pages
+
+- [About ECU](../app/about/page.js) now uses the imported university profile, mission, vision, objectives, international-cooperation summary, and the existing verified campus locations.
+- [Admissions](../app/admissions/page.js) now presents Egyptian Secondary, Arab certificates, IGCSE, American Diploma, IB, and Abitur source-backed pathways with supplied documents/highlights and freshness warnings.
+- Existing official application links remain the only submission pathway.
+
+### Media authorization gate
+
+All 11 imported image records remain `unverified_requires_ecu_approval` and `do_not_publish_until_authorized`. No image was downloaded, copied into `public/media`, hotlinked, or rendered publicly. The inventory remains the internal approval queue and source relationship register.
+
+The local Next.js executable is still unavailable, so the production build and new page browser verification remain blocked.
+
 ### Phase 11 verification status
 
 | Area | Result |

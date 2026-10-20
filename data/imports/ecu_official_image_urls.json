@@ -1,0 +1,185 @@
+{
+  "project": "ECU replacement website",
+  "dataset": "official-source media URL catalog",
+  "version": "1.0",
+  "researched_on": "2026-10-20",
+  "usage_notice": "URLs are direct image links found on ECU public pages, NOT permission to reproduce. Do not hotlink or download for publication without permission. Image visual context is manually categorized and should be confirmed before use.",
+  "image_selection_rules": [
+    "Match related_content_ids with content records",
+    "Choose photos by subject and orientation; do not place unrelated event images on faculty pages",
+    "Use authorized original images stored locally, with alt text, proper crop, and responsive sizes",
+    "Do not select a photo as the campus hero merely because it includes ECU branding",
+    "Separate image rights clearance from factual text verification"
+  ],
+  "images": [
+    {
+      "id": "img-engineering-visit",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2026/06/Engineering-2.jpeg",
+      "source_page": "https://ecu.edu.eg/",
+      "related_content_ids": [],
+      "subject": "Group photographed at State Grid venue",
+      "recommended_usage": "engineering activity / story",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true,
+      "source_context": "Homepage faculty image; avoid calling this an ECU campus shot"
+    },
+    {
+      "id": "img-economics-visit",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2022/06/Economics-and-International-Trade-1-1.jpg",
+      "source_page": "https://ecu.edu.eg/",
+      "related_content_ids": [],
+      "subject": "Students visiting industrial venue",
+      "recommended_usage": "economics faculty story",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true
+    },
+    {
+      "id": "img-books-ceremony",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2023/11/IMG-20231128-WA0024.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-books"
+      ],
+      "subject": "Books at Chinese books handover",
+      "recommended_usage": "Chinese books donation story",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true,
+      "alt_text": "Chinese-language books on display at a university handover ceremony"
+    },
+    {
+      "id": "img-china-meeting",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2023/11/M2.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-cooperation",
+        "uni-international"
+      ],
+      "subject": "Meeting with Egyptian and Chinese flags",
+      "recommended_usage": "international-cooperation story",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true
+    },
+    {
+      "id": "img-arts-workshop",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2023/12/408276131_122121694850055403_6943063272650403475_n.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-arts-workshop"
+      ],
+      "subject": "Lecture/workshop with students seated",
+      "recommended_usage": "arts and design student activity",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true
+    },
+    {
+      "id": "img-pharmacy-visit",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2023/12/407594327_363984819491459_3102819178275075812_n.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-pharmacy-industry"
+      ],
+      "subject": "Group of students during an educational visit",
+      "recommended_usage": "pharmacy activities",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true,
+      "note": "Gallery description names SEDICO visit; visually confirm image belongs to that grouping before pairing."
+    },
+    {
+      "id": "img-vet-practical",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2023/12/IMG-20231214-WA0005.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-vet-training"
+      ],
+      "subject": "Students in white coats next to anatomical skeleton",
+      "recommended_usage": "veterinary practical training",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true
+    },
+    {
+      "id": "img-faculty-building",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2023/12/IMG-20231220-WA0017.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "uni-profile"
+      ],
+      "subject": "ECU Faculty of Engineering and Technology entrance during visit",
+      "recommended_usage": "faculty identity or campus architectural story",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true,
+      "note": "A faculty building is visible, but this is an event photo—not a clean main campus architectural hero."
+    },
+    {
+      "id": "img-cooperation-signing",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2024/01/IMG-20231231-WA0009.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-cooperation",
+        "uni-international"
+      ],
+      "subject": "Agreement-signing table with Egypt and China flags",
+      "recommended_usage": "partnership archival story",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true
+    },
+    {
+      "id": "img-liverpool-visit",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2024/04/438692173_122165173094077540_3859786837969876654_n.jpg",
+      "source_page": "https://ecu.edu.eg/photo-gallery/",
+      "related_content_ids": [
+        "gallery-liverpool"
+      ],
+      "subject": "Delegation in an ECU office",
+      "recommended_usage": "research and international visit",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true
+    },
+    {
+      "id": "img-mass-dean",
+      "url": "https://ecu.edu.eg/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-02-at-12.42.20_b2dc894b-450x600.jpg",
+      "source_page": "https://ecu.edu.eg/faculties/media/",
+      "related_content_ids": [
+        "faculty-media"
+      ],
+      "subject": "Portrait shown alongside the Mass Communication faculty dean listing",
+      "recommended_usage": "Mass Communication faculty staff profile",
+      "usage_rights": "unverified_requires_ecu_approval",
+      "publish_status": "do_not_publish_until_authorized",
+      "is_campus_hero_candidate": false,
+      "verified_as_direct_image_link": true,
+      "note": "Verify current identity/title and portrait rights before publication."
+    }
+  ],
+  "additional_image_source_pages": [
+    "https://ecu.edu.eg/photo-gallery/",
+    "https://ecu.edu.eg/",
+    "https://ecu.edu.eg/faculties/media/"
+  ],
+  "requested_from_ecu": [
+    "Rights-cleared high-resolution campus exterior hero images",
+    "Faculty and laboratory image originals",
+    "Logo / official brand manual",
+    "Written or contractual confirmation of image reuse rights",
+    "Approved captions and people/photo consent where needed"
+  ]
+}
