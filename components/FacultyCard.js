@@ -1,7 +1,7 @@
 import Link from 'next/link';
 export default function FacultyCard({ faculty, index, featured = false }) {
   return <Link href={`/faculties/${faculty.slug}`} className={featured ? 'faculty-card' : 'directory-card'}>
-    <div className="faculty-card-top"><span>{String(index + 1).padStart(2, '0')}</span><img src="/assets/images/ecu-logo.png" alt="" /></div>
+    <div className="faculty-card-top"><span>{String(index + 1).padStart(2, '0')}</span><b className="faculty-mark" aria-hidden="true">{faculty.name.slice(0, 2).toUpperCase()}</b></div>
     <h3>{faculty.name}</h3>
     {faculty.summary && <p>{faculty.summary}</p>}
     {!faculty.summary && <p>{featured ? 'Explore the faculty' : 'View faculty overview'}</p>}

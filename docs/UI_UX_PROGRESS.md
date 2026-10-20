@@ -408,6 +408,39 @@ The synchronized preview was checked at the available browser viewport equivalen
 
 The programme finder remained responsive at the narrow state. These remain static-preview results; the Next.js application is not production-verified because the declared `next` executable is still unavailable.
 
+## Phase 14 Update — Presentation Reconstruction and Runtime Gate
+
+### Runtime gate
+
+The real production build was attempted again. It remains blocked before compilation because the local `next` executable is unavailable:
+
+```text
+'next' is not recognized as an internal or external command
+```
+
+No live deployment or production runtime claim is made.
+
+### Presentation changes
+
+- [FacultyCard.js](../components/FacultyCard.js) no longer uses the ECU logo as repeated faculty-card imagery; cards now use restrained faculty initials until approved faculty photography is delivered.
+- [page.js](../app/page.js) now includes an editorial “ECU Experience” story block with verified academic/international positioning and meaningful routes.
+- The admissions feature now presents a concrete three-step guidance pathway instead of repeating an unavailable scholarship message.
+- [home.css](../app/home.css) adds the editorial story-panel composition and responsive mobile stacking.
+- The static preview was synchronized with the story block and faculty initials.
+
+### Phase 14 preview evidence
+
+At the available 390px preview viewport:
+
+- No horizontal overflow detected.
+- Hero height was 507px.
+- English/Arabic/Chinese locale direction behavior remained available.
+- Arabic preview set `lang="ar"` and `dir="rtl"` without overflow.
+- Mobile menu interaction set `aria-expanded="true"` successfully.
+- Faculty preview cards displayed initials rather than repeated logos.
+
+Phase 14 remains implemented and preview-verified, but not production-verified.
+
 ### Phase 11 verification status
 
 | Area | Result |

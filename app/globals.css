@@ -251,7 +251,7 @@ h2 {
 .faculty-card:hover,
 .faculty-card:focus-visible { background: var(--charcoal); color: #fff; transform: translateY(-4px); }
 .faculty-card-top { display: flex; justify-content: space-between; align-items: center; }
-.faculty-card-top img { width: 34px; height: 34px; object-fit: contain; opacity: .55; }
+.faculty-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--line); color: var(--primary); font-size: .72rem; letter-spacing: .08em; }
 .faculty-card span { color: var(--primary); font-size: .8rem; font-weight: bold; }
 .faculty-card h3 { font-family: Georgia, serif; font-size: 1.55rem; line-height: 1.1; margin: auto 0 1rem; }
 .faculty-card p { font-size: .86rem; margin: 0; }
@@ -265,6 +265,10 @@ h2 {
 .feature aside p { font-size: .82rem !important; color: #fff !important; text-transform: uppercase; letter-spacing: .08em; }
 .feature aside h3 { font: 1.65rem/1.2 Georgia, serif; }
 .feature aside a { font-weight: 700; text-decoration: underline; text-underline-offset: 5px; }
+.admissions-steps ol { display: grid; gap: 1rem; list-style: none; padding: 0; margin: 1.4rem 0 0; }
+.admissions-steps li { display: grid; grid-template-columns: 2rem 1fr; gap: .8rem; align-items: start; border-top: 1px solid #ffffff40; padding-top: 1rem; }
+.admissions-steps li b { color: var(--accent); font-size: .78rem; }
+.admissions-steps li span { color: #fff; font-weight: 700; }
 .research { display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; align-items: end; }
 .research h2 { margin-bottom: 0; }
 .research > p { font-size: 1.1rem; color: var(--muted); margin: 0; }
