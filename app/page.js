@@ -5,15 +5,14 @@ import { useEffect, useState } from 'react';
 import FacultyCard from '../components/FacultyCard';
 import ProgrammeFinder from '../components/ProgrammeFinder';
 import SiteHeader from '../components/SiteHeader';
-import { featuredFaculties, facultyDirectory } from '../lib/faculties';
+import { featuredFaculties } from '../lib/faculties';
+import { programmeDirectory } from '../lib/programmes';
 
 const labels = {
   en: { skip: 'Skip to content', faculties: 'Explore faculties', apply: 'Apply now', more: 'View all faculties', official: 'Visit official ECU source', view: 'View faculty', programmes: 'Academic programmes', admissions: 'Admissions', scholarships: 'Scholarships', services: 'Student services', continuing: 'Continuing education', achievements: 'Hall of achievements', news: 'News and events', research: 'Research and innovation', partnerships: 'International partnerships', campus: 'Campus life', contact: 'Visit and contact', unavailable: 'This section will be published when ECU-approved content is available.' },
   ar: { skip: 'انتقل إلى المحتوى', faculties: 'استكشف الكليات', apply: 'قدّم الآن', more: 'عرض جميع الكليات', official: 'زيارة مصدر ECU الرسمي', view: 'عرض الكلية', programmes: 'البرامج الأكاديمية', admissions: 'القبول', scholarships: 'المنح الدراسية', services: 'خدمات الطلاب', continuing: 'التعليم المستمر', achievements: 'قاعة الإنجازات', news: 'الأخبار والفعاليات', research: 'البحث والابتكار', partnerships: 'الشراكات الدولية', campus: 'الحياة الجامعية', contact: 'زيارة وتواصل', unavailable: 'سيُنشر هذا القسم عند توفر محتوى معتمد من ECU.' },
   zh: { skip: '跳转到内容', faculties: '探索学院', apply: '立即申请', more: '查看全部学院', official: '访问 ECU 官方来源', view: '查看学院', programmes: '学术课程', admissions: '招生', scholarships: '奖学金', services: '学生服务', continuing: '继续教育', achievements: '成就殿堂', news: '新闻与活动', research: '研究与创新', partnerships: '国际合作', campus: '校园生活', contact: '参观与联系', unavailable: 'ECU 批准内容发布后，此部分将会开放。' },
 };
-
-const verifiedProgrammes = facultyDirectory.flatMap((faculty) => (faculty.programs || []).map((program) => ({ ...program, faculty: faculty.name, facultySlug: faculty.slug })));
 
 export default function Home() {
   const [lang, setLang] = useState('en');
@@ -38,7 +37,7 @@ export default function Home() {
 
     <section className="section wrap" aria-labelledby="featured-title"><div className="section-intro"><div><p className="eyebrow">FEATURED FACULTIES</p><h2 id="featured-title">Choose a direction. Build what comes next.</h2></div><Link className="outlined-link" href="/faculties">{t.more} -&gt;</Link></div><div className="faculty-grid">{featuredFaculties.map((faculty, index) => <FacultyCard key={faculty.slug} faculty={faculty} index={index} featured />)}</div></section>
 
-    <section id="programmes" className="section programmes-home" aria-labelledby="programmes-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">{t.programmes}</p><h2 id="programmes-title">Start with a field that fits your ambition.</h2></div><Link className="outlined-link" href="/faculties">{t.more} -&gt;</Link></div><ProgrammeFinder programmes={verifiedProgrammes} initialLimit={6} /></div></section>
+    <section id="programmes" className="section programmes-home" aria-labelledby="programmes-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">{t.programmes}</p><h2 id="programmes-title">Start with a field that fits your ambition.</h2></div><Link className="outlined-link" href="/programmes">{t.more} -&gt;</Link></div><ProgrammeFinder programmes={programmeDirectory} initialLimit={6} /></div></section>
 
     <section id="admissions" className="section feature" aria-labelledby="admissions-title"><div className="wrap feature-grid"><div><p className="eyebrow">{t.admissions}</p><h2 id="admissions-title">Find the requirements before you apply.</h2><p>ECU publishes entry requirements and required documents for Egyptian, Arab and international secondary certificates.</p><Link className="button" href="/admissions">{t.admissions} <span aria-hidden="true">-&gt;</span></Link></div><aside className="admissions-steps"><p>YOUR NEXT THREE STEPS</p><ol><li><b>01</b><span>Review entry requirements</span></li><li><b>02</b><span>Prepare the required documents</span></li><li><b>03</b><span>Continue through the secure application pathway</span></li></ol></aside></div></section>
 

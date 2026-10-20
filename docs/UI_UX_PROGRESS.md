@@ -468,6 +468,20 @@ Baseline evidence captured:
 
 The Phase 15 implementation is pushed for Vercel validation. A post-deployment browser comparison and production build result remain pending until the new deployment reaches a confirmed Ready state.
 
+## Phase 16 Update — Verified Programme Experience
+
+The next complete delivery slice adds a maintainable academic programme experience using the existing verified faculty records:
+
+- [lib/programmes.js](../lib/programmes.js) creates stable programme IDs/slugs, faculty relationships, source URLs and verification status from the central faculty dataset.
+- [/programmes](../app/programmes/page.js) provides a dedicated local programme directory with search and faculty filtering.
+- [/programmes/[...slug]](../app/programmes/[...slug]/page.js) provides programme detail routes without inventing duration, tuition, curriculum or career claims.
+- [ProgrammeFinder.js](../components/ProgrammeFinder.js) now links to programme detail routes rather than only sending users to a faculty page.
+- The shared Academics menu now exposes the programme directory directly.
+
+Official ECU and admissions sources were checked during this phase. The local records remain deliberately limited to programme names and descriptions already present in the project’s verified dataset because current detailed programme metadata and reuse-approved media were not established in the available source response.
+
+The new routes require the next Vercel deployment for production browser verification. The local environment still lacks the installed Next.js executable, so no local production build is claimed.
+
 ### Phase 11 verification status
 
 | Area | Result |
