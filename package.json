@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A modern, multilingual (English/Arabic/Chinese), accessible university website platform for the Egyptian Chinese University.",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "next": "14.2.25",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

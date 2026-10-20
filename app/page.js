@@ -1,0 +1,57 @@
+'use client';
+
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import FacultyCard from '../components/FacultyCard';
+import ProgrammeFinder from '../components/ProgrammeFinder';
+import SiteHeader from '../components/SiteHeader';
+import { featuredFaculties, facultyDirectory } from '../lib/faculties';
+
+const labels = {
+  en: { skip: 'Skip to content', faculties: 'Explore faculties', apply: 'Apply now', more: 'View all faculties', official: 'Visit official ECU source', view: 'View faculty', programmes: 'Academic programmes', admissions: 'Admissions', scholarships: 'Scholarships', services: 'Student services', continuing: 'Continuing education', achievements: 'Hall of achievements', news: 'News and events', research: 'Research and innovation', partnerships: 'International partnerships', campus: 'Campus life', contact: 'Visit and contact', unavailable: 'This section will be published when ECU-approved content is available.' },
+  ar: { skip: 'انتقل إلى المحتوى', faculties: 'استكشف الكليات', apply: 'قدّم الآن', more: 'عرض جميع الكليات', official: 'زيارة مصدر ECU الرسمي', view: 'عرض الكلية', programmes: 'البرامج الأكاديمية', admissions: 'القبول', scholarships: 'المنح الدراسية', services: 'خدمات الطلاب', continuing: 'التعليم المستمر', achievements: 'قاعة الإنجازات', news: 'الأخبار والفعاليات', research: 'البحث والابتكار', partnerships: 'الشراكات الدولية', campus: 'الحياة الجامعية', contact: 'زيارة وتواصل', unavailable: 'سيُنشر هذا القسم عند توفر محتوى معتمد من ECU.' },
+  zh: { skip: '跳转到内容', faculties: '探索学院', apply: '立即申请', more: '查看全部学院', official: '访问 ECU 官方来源', view: '查看学院', programmes: '学术课程', admissions: '招生', scholarships: '奖学金', services: '学生服务', continuing: '继续教育', achievements: '成就殿堂', news: '新闻与活动', research: '研究与创新', partnerships: '国际合作', campus: '校园生活', contact: '参观与联系', unavailable: 'ECU 批准内容发布后，此部分将会开放。' },
+};
+
+const verifiedProgrammes = facultyDirectory.flatMap((faculty) => (faculty.programs || []).map((program) => ({ ...program, faculty: faculty.name, facultySlug: faculty.slug })));
+
+export default function Home() {
+  const [lang, setLang] = useState('en');
+  const t = labels[lang];
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem('ecu-locale');
+    if (stored === 'ar' || stored === 'zh') setLang(stored);
+    const handleLocale = (event) => setLang(event.detail);
+    window.addEventListener('ecu-locale-change', handleLocale);
+    return () => window.removeEventListener('ecu-locale-change', handleLocale);
+  }, []);
+
+  return <main>
+    <a className="skip-link" href="#main">{t.skip}</a>
+    <SiteHeader onLocaleChange={setLang} />
+    <section className="hero hero-refined" aria-labelledby="hero-title"><div className="hero-image" aria-hidden="true"><div className="hero-art"><span /><span /><span /></div><small>ECU campus photography pending approval</small></div><div id="main" className="wrap hero-content"><p className="eyebrow">EGYPTIAN CHINESE UNIVERSITY</p><h1 id="hero-title">History creates your future.</h1><p className="lead">Explore ECU’s academic community, connecting education, research and practical learning.</p><div className="actions"><Link className="button" href="/admissions">{t.apply} <span aria-hidden="true">-&gt;</span></Link><Link className="text-link" href="#programmes">{t.programmes} <span aria-hidden="true">-&gt;</span></Link></div></div></section>
+
+    <section className="quick wrap" aria-label="Quick access"><Link href="/faculties"><b>01</b><span>{t.faculties}</span><small>Explore 12 verified records</small><i aria-hidden="true">-&gt;</i></Link><Link href="#programmes"><b>02</b><span>{t.programmes}</span><small>Search published study areas</small><i aria-hidden="true">-&gt;</i></Link><Link href="/admissions"><b>03</b><span>{t.admissions}</span><small>Requirements and application</small><i aria-hidden="true">-&gt;</i></Link><Link href="/admissions"><b>04</b><span>{t.scholarships}</span><small>View current information</small><i aria-hidden="true">-&gt;</i></Link><Link href="/contact"><b>05</b><span>{t.continuing}</span><small>Professional learning pathway</small><i aria-hidden="true">-&gt;</i></Link><Link href="/contact"><b>06</b><span>{t.services}</span><small>Find verified contact routes</small><i aria-hidden="true">-&gt;</i></Link></section>
+
+    <section className="section wrap audience-section" aria-labelledby="audience-title"><div className="section-intro"><div><p className="eyebrow">FIND YOUR NEXT STEP</p><h2 id="audience-title">A clearer route into ECU.</h2></div><p>Start with the information that matches where you are in your university journey.</p></div><div className="audience-grid"><Link href="/faculties"><span>01</span><h3>Prospective students</h3><p>Compare faculties and published study areas.</p><i aria-hidden="true">-&gt;</i></Link><Link href="/admissions"><span>02</span><h3>Applicants and families</h3><p>Review admissions guidance before applying.</p><i aria-hidden="true">-&gt;</i></Link><Link href="/research"><span>03</span><h3>Researchers and partners</h3><p>Explore ECU’s published research direction.</p><i aria-hidden="true">-&gt;</i></Link></div></section>
+
+    <section className="section wrap why-section"><div className="section-intro"><div><p className="eyebrow">WHY ECU</p><h2>Built around knowledge, application and connection.</h2></div><p>ECU’s published profile describes cooperation with Chinese universities and education across engineering, medicine, physical therapy and business.</p></div><div className="strength-grid"><article><b>01</b><h3>Academic breadth</h3><p>Explore faculties and published study pathways across multiple fields.</p></article><article><b>02</b><h3>Research and innovation</h3><p>Find ECU research plans, projects and faculty initiatives through official sources.</p></article><article><b>03</b><h3>International connection</h3><p>ECU publishes collaboration and exchange activity with Chinese academic institutions.</p></article></div></section>
+
+    <section className="section wrap" aria-labelledby="featured-title"><div className="section-intro"><div><p className="eyebrow">FEATURED FACULTIES</p><h2 id="featured-title">Choose a direction. Build what comes next.</h2></div><Link className="outlined-link" href="/faculties">{t.more} -&gt;</Link></div><div className="faculty-grid">{featuredFaculties.map((faculty, index) => <FacultyCard key={faculty.slug} faculty={faculty} index={index} featured />)}</div></section>
+
+    <section id="programmes" className="section programmes-home" aria-labelledby="programmes-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">{t.programmes}</p><h2 id="programmes-title">Start with a field that fits your ambition.</h2></div><Link className="outlined-link" href="/faculties">{t.more} -&gt;</Link></div><ProgrammeFinder programmes={verifiedProgrammes} /></div></section>
+
+    <section id="admissions" className="section feature" aria-labelledby="admissions-title"><div className="wrap feature-grid"><div><p className="eyebrow">{t.admissions}</p><h2 id="admissions-title">Find the requirements before you apply.</h2><p>ECU publishes entry requirements and required documents for Egyptian, Arab and international secondary certificates.</p><Link className="button" href="/admissions">{t.admissions} <span aria-hidden="true">-&gt;</span></Link></div><aside><p>{t.scholarships}</p><h3>{t.unavailable}</h3><Link className="text-link" href="/admissions">{t.admissions} <span aria-hidden="true">-&gt;</span></Link></aside></div></section>
+
+    <section className="section wrap discovery-grid"><article><p className="eyebrow">{t.continuing}</p><h2>Professional learning, when the official catalogue is ready.</h2><p>{t.unavailable}</p><Link className="text-link" href="/contact">{t.contact} <span aria-hidden="true">-&gt;</span></Link></article><article><p className="eyebrow">{t.achievements}</p><h2>Celebrating ECU community milestones.</h2><p>{t.unavailable}</p><Link className="text-link" href="/news-events">{t.news} <span aria-hidden="true">-&gt;</span></Link></article></section>
+
+    <section className="section wrap news-preview"><div className="section-intro"><div><p className="eyebrow">{t.news}</p><h2>Stay close to the latest ECU updates.</h2></div><Link className="outlined-link" href="/news-events">{t.news} -&gt;</Link></div><div className="empty-panel"><strong>{t.unavailable}</strong><span>News and event records require a current ECU editorial feed.</span></div></section>
+
+    <section id="research" className="section research-panel"><div className="wrap research"><div><p className="eyebrow">{t.research}</p><h2>Explore the work behind ECU’s academic community.</h2></div><div><p>Read ECU’s published research plans and projects, plus current faculty initiatives, through the official website.</p><Link className="button" href="/research">{t.research} <span aria-hidden="true">-&gt;</span></Link></div></div></section>
+
+    <section className="section wrap discovery-grid"><article><p className="eyebrow">{t.partnerships}</p><h2>Academic connection across borders.</h2><p>ECU’s public profile references cooperation with Chinese universities. Current partnership records should be confirmed by the university.</p><Link className="text-link" href="/about">{t.partnerships} <span aria-hidden="true">-&gt;</span></Link></article><article><p className="eyebrow">{t.campus}</p><h2>Plan a visit to an ECU branch.</h2><p>Campus-life content and activities are awaiting an approved ECU source. Contact details are listed below.</p><Link className="text-link" href="/contact">{t.contact} <span aria-hidden="true">-&gt;</span></Link></article></section>
+
+    <footer id="contact"><div className="wrap footer-grid"><div><img src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" className="footer-logo" /><h2>Egyptian Chinese University</h2><Link href="/about">About ECU</Link><Link href="/faculties">{t.faculties}</Link><Link href="/contact">{t.contact}</Link><a href="https://ecu.edu.eg/" target="_blank" rel="noreferrer">{t.official}</a></div><div><p><strong>Heliopolis Branch</strong><br />Gesr ElSuez St., behind Tagneed Bridge, Cairo, Egypt.</p><p><strong>Nasr City Branch</strong><br />Al Hay Al Asher, Nasr City, Cairo, Egypt.</p></div></div><div className="wrap copyright"><span>Copyright {new Date().getFullYear()} Egyptian Chinese University.</span><Link href="#main">Back to top</Link></div></footer>
+  </main>;
+}
