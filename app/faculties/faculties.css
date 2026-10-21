@@ -8,3 +8,5 @@
 .directory-card h3 { font-size: var(--font-card); }
 @media (max-width: 700px) { .directory-header { padding-block: 3.5rem; } .directory-card { min-height: 210px; } }
 .faculty-card-image,.faculty-hero-photo{display:block;width:100%;object-fit:cover}.faculty-card-image{height:170px}.faculty-hero-photo{max-height:280px;aspect-ratio:4/3}.faculty-card:has(.faculty-card-image){padding-top:0}.faculty-card:has(.faculty-card-image) .faculty-card-top{padding-top:1.25rem}
+.directory-filters{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}.directory-filters button{border:1px solid var(--line);background:#fff;padding:.65rem .8rem;font:inherit;font-weight:700;cursor:pointer}.directory-filters button:hover,.directory-filters button:focus-visible,.directory-filters button.is-active{background:var(--primary);border-color:var(--primary);color:#fff}
+.faculty-path-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-top:1.5rem}
