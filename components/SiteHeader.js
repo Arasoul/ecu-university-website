@@ -73,6 +73,7 @@ export default function SiteHeader({ onLocaleChange }) {
         <Link href="/admissions" onClick={() => setOpen(false)}>{t.admissions}</Link>
         <Link href="/research" onClick={() => setOpen(false)}>{t.research}</Link>
         <Link href="/contact" onClick={() => setOpen(false)}>{t.contact}</Link>
+        <Link href="/search" onClick={() => setOpen(false)}>Search</Link>
       </nav>
       <a className="button desktop-apply" href="https://ecu.edu.eg/about-ecu/admission/" target="_blank" rel="noreferrer">{t.apply} <span aria-hidden="true">-&gt;</span></a>
       <button className="menu-button" aria-expanded={open} aria-controls="main-menu" onClick={() => setOpen((value) => !value)}>{open ? t.close : t.menu} <span aria-hidden="true">{open ? '×' : '='}</span></button>

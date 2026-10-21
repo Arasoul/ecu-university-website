@@ -81,6 +81,8 @@ Open [preview/ecu-preview.html](./preview/ecu-preview.html) in a browser for a r
 
 This preview is not the production Next.js application and passing preview checks does not prove that the Next.js application builds or runs.
 
+Milestone 2 adds the verified-content search route at `/search`, programme filtering and comparison, and transparent Find My Program suggestions on `/programmes`.
+
 ## Current limitations
 
 - Next.js dependencies are unavailable in the existing environment.

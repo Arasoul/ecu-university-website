@@ -508,6 +508,15 @@ All 11 imported image records remain `unverified_requires_ecu_approval` and `do_
 
 The local Next.js executable is still unavailable, so the production build and new page browser verification remain blocked.
 
+## Milestone 2 — discovery implementation
+
+- Added a normalized client-search index covering faculties, programme areas, verified university and admissions records, dated archived stories/activities, research/service destinations, and only local published routes.
+- Added `/search` with title/keyword matching, relevance ordering, content-type filtering, empty state, live result status, and keyboard-accessible native controls.
+- Added programme filtering, two-to-three-item comparison, neutral unavailable metadata, and a rules-based Find My Program guide. Recommendations explain matching terms and do not imply admission or employment outcomes.
+- Added compact homepage entry points for search and programme guidance.
+- Admission certificate tabs now use roving `tabIndex`, `aria-controls`, `tabpanel`, and Arrow key movement.
+- The local production build remains unverified because the existing environment has no installed `next` executable.
+
 ## Critical Content Integration — 2026-10-21
 
 The verified dataset [ecu_verified_content_2026-10-21.json](../data/imports/ecu_verified_content_2026-10-21.json) is now integrated through [verifiedContent.js](../lib/verifiedContent.js).
