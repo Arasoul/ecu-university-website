@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0",
+  "description": "Publication boundary for the Milestone 4 editorial experience.",
+  "sourceDataset": "data/imports/ecu_verified_content_2026-10-21.json",
+  "lastVerified": "2026-10-21",
+  "mediaPolicy": "No image is published until ECU reuse authorization is recorded.",
+  "achievementPolicy": "No achievement record is published without evidence of a concrete accomplishment."
+}
