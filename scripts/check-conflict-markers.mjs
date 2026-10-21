@@ -2,9 +2,10 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 
 const markerPattern = /^\s*(<<<<<<<(?:\s|$)|=======(?:\s|$)|>>>>>>>(?:\s|$)|\|\|\|\|\|\|\|(?:\s|$))/;
+const ignoredFiles = new Set(['scripts/check-conflict-markers.mjs']);
 const trackedFiles = execFileSync('git', ['ls-files', '-z'], { encoding: 'utf8' })
   .split('\0')
-  .filter(Boolean);
+  .filter((file) => file && !ignoredFiles.has(file));
 const findings = [];
 
 for (const file of trackedFiles) {

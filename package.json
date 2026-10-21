@@ -16,6 +16,7 @@
     "build": "next build",
     "start": "next start",
     "check:conflicts": "node scripts/check-conflict-markers.mjs",
+    "validate:contact": "node scripts/validate-contact.mjs",
     "validate:editorial": "node scripts/validate-editorial.mjs",
     "validate:campus": "node scripts/validate-campus.mjs"
   },
