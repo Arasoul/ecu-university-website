@@ -29,7 +29,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, "Noto Sans Arabic", "Microsoft YaHei", sans-serif;
+  font-family: Inter, "Source Sans 3", "Cairo", "IBM Plex Sans Arabic", "Microsoft YaHei", Arial, sans-serif;
   line-height: var(--line-body);
   font-size: var(--font-body);
 }
@@ -188,14 +188,14 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3, p { margin-top: 0; }
 h1 {
   max-width: 720px;
-  font-family: Georgia, "Noto Serif Arabic", serif;
+  font-family: Manrope, "Plus Jakarta Sans", "Cairo", "Microsoft YaHei", Georgia, serif;
   font-size: var(--font-hero);
   line-height: var(--line-heading);
   letter-spacing: -.055em;
   margin-bottom: 1.5rem;
 }
 h2 {
-  font-family: Georgia, "Noto Serif Arabic", serif;
+  font-family: Manrope, "Plus Jakarta Sans", "Cairo", "Microsoft YaHei", Georgia, serif;
   font-size: var(--font-section);
   line-height: var(--line-heading);
   letter-spacing: -.035em;
