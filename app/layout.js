@@ -5,6 +5,7 @@ import './home.css';
 import './discovery.css';
 import './information.css';
 import './editorial.css';
+import './campus.css';
 import { headers } from 'next/headers';
 
 export function generateMetadata() {

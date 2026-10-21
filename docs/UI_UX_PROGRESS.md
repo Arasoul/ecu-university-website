@@ -508,6 +508,15 @@ All 11 imported image records remain `unverified_requires_ecu_approval` and `do_
 
 The local Next.js executable is still unavailable, so the production build and new page browser verification remain blocked.
 
+## Milestones 4 and 5 source implementation
+
+- Milestone 4 is based on the preserved Milestone 3.5 branch and publishes 2 dated news records, 5 dated historical activities, 4 gallery subjects without images, and 0 achievements because no concrete awards were verified.
+- News and event detail routes contain concise source-backed summaries rather than copied article bodies. Events are split by real occurrence dates; no current upcoming event is invented.
+- Milestone 5 is based on the Milestone 4 branch and links the 5 activity records to canonical event routes, exposes 4 verified Mass Communication practical-learning records, 2 published branch locations, 0 verified facilities, and 4 non-publishable media candidates.
+- Search now includes editorial records, campus activities, facilities when available, and campus locations. The homepage includes compact archive and Campus Life features without rendering a full directory.
+- Source-level validation commands: `npm run validate:editorial` and `npm run validate:campus`.
+- Build and browser verification remain blocked by the unavailable local Next.js executable and lack of a confirmed Vercel preview.
+
 ## Milestone 2 — discovery implementation
 
 - Added a normalized client-search index covering faculties, programme areas, verified university and admissions records, dated archived stories/activities, research/service destinations, and only local published routes.
