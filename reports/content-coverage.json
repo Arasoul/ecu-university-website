@@ -11,7 +11,8 @@
   },
   "after": {
     "facultiesAudited": 12,
-    "publishedActivities": 4,
+    "newPublishedActivities": 4,
+    "publishedActivities": 9,
     "publishedAchievements": 0,
     "heldAchievementCandidates": 2,
     "researchRecords": 3,
