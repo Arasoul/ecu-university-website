@@ -3,6 +3,7 @@ import SiteHeader from '../../../components/SiteHeader';
 import ProgrammeList from '../../../components/ProgrammeList';
 import { facultyDirectory, getFaculty } from '../../../lib/faculties';
 import '../faculties.css';
+import { getFacultyDetail, getFacultyLearningRecords } from '../../../lib/verifiedContent';
 
 export function generateStaticParams() {
   return facultyDirectory.map(({ slug }) => ({ slug }));
@@ -13,6 +14,9 @@ export default function FacultyPage({ params }) {
   if (!faculty) return <main><SiteHeader /><section className="section wrap"><p className="eyebrow">ECU ACADEMICS</p><h1>Faculty not found</h1><Link className="outlined-link" href="/faculties">Return to faculties</Link></section></main>;
 
   const isComputing = faculty.slug === 'computers-and-information-systems';
+  const isMassCommunication = faculty.slug === 'mass-communication';
+  const massDetail = isMassCommunication ? getFacultyDetail('faculty-mass-communication') : null;
+  const massLearning = isMassCommunication ? getFacultyLearningRecords('faculty-mass-communication') : [];
   const overviewFallback = `ECU has published this faculty in its directory. Further programme and department content will be added when it is available from an official ECU source.`;
   return <main>
     <SiteHeader />
@@ -21,6 +25,7 @@ export default function FacultyPage({ params }) {
     <section id="overview" className="section wrap detail-grid"><div><p className="eyebrow">OVERVIEW</p><h2>{isComputing ? 'A clear starting point for computing study.' : 'Academic identity'}</h2><p>{faculty.summary || overviewFallback}</p><a className="button" href={faculty.sourceUrl} target="_blank" rel="noreferrer">Visit official ECU source <span aria-hidden="true">-&gt;</span></a></div><aside className="faculty-facts"><span>CONTENT STATUS</span><strong>{faculty.programs?.length ? `${faculty.programs.length} published study areas` : 'Directory entry verified'}</strong><p>Only ECU-published information is shown in this experience.</p></aside></section>
 
     {faculty.programs?.length ? <div id="programmes"><ProgrammeList programs={faculty.programs} /></div> : null}
+    {massDetail ? <section className="section wrap faculty-content-story"><div className="section-intro"><div><p className="eyebrow">REFERENCE FACULTY EXPERIENCE</p><h2>Communication, creativity and professional practice.</h2></div><p>{massDetail.summary}</p></div><div className="faculty-departments"><div><p className="eyebrow">PUBLISHED DEPARTMENTS</p>{massDetail.departments.map((department) => <a href={department.sourceUrl} target="_blank" rel="noreferrer" key={department.id}><strong>{department.name}</strong><span>Read official department source -&gt;</span></a>)}</div><aside><p className="eyebrow">ACADEMIC LEADERSHIP</p><h3>{massDetail.deanListed}</h3><p>Leadership listing requires reconfirmation before it is treated as current.</p></aside></div><div className="faculty-learning-grid">{massLearning.map((record) => <article key={record.id}><p className="eyebrow">{record.kind === 'academic-structure' ? 'FOUNDATION' : 'LEARNING AREA'}</p><h3>{record.title}</h3><p>{record.summary}</p>{record.tracks ? <ul className="content-list">{record.tracks.map((track) => <li key={track}>{track}</li>)}</ul> : null}<a className="text-link" href={record.sourceUrls[0]} target="_blank" rel="noreferrer">Read source -&gt;</a></article>)}</div></section> : null}
 
     <section id="source" className="section faculty-source"><div className="wrap source-grid"><div><p className="eyebrow">MORE FACULTY INFORMATION</p><h2>Use the official ECU source for current details.</h2></div><div><p>Departments, laboratories, academic staff, research, achievements, events and contact records are not included here until ECU provides approved content for publication.</p><a className="text-link" href={faculty.sourceUrl} target="_blank" rel="noreferrer">Open {faculty.name} source <span aria-hidden="true">-&gt;</span></a></div></div></section>
   </main>;

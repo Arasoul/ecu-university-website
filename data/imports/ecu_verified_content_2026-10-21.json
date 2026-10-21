@@ -1,0 +1,867 @@
+{
+  "schemaVersion": "1.0",
+  "datasetId": "ecu-official-public-research-2026-10-21",
+  "createdOn": "2026-10-21",
+  "language": "en",
+  "purpose": "Curated source-backed starter dataset for ECU replacement website",
+  "notOfficiallyApproved": true,
+  "usagePolicy": {
+    "content": "Paraphrased research summaries. Editorially check before representing as formally approved institutional statements.",
+    "admissions": "Do not show certificate rules as currently valid for 2026/27 without fresh written confirmation from ECU admissions.",
+    "media": "Direct URLs and media candidates are not publication rights. No unapproved images to be published.",
+    "news": "Historical stories are archived, not current/upcoming.",
+    "faculties": "Directory membership is not evidence that admissions are open.",
+    "records": "Maintain provenance and avoid duplicating existing records."
+  },
+  "sources": [
+    {
+      "key": "profile",
+      "url": "https://ecu.edu.eg/about-ecu/university-profile/"
+    },
+    {
+      "key": "mission",
+      "url": "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/"
+    },
+    {
+      "key": "faculties",
+      "url": "https://ecu.edu.eg/faculties/"
+    },
+    {
+      "key": "admissions",
+      "url": "https://ecu.edu.eg/about-ecu/admission/"
+    },
+    {
+      "key": "portal",
+      "url": "https://admission.ecu.edu.eg/"
+    },
+    {
+      "key": "media",
+      "url": "https://ecu.edu.eg/faculties/media/"
+    },
+    {
+      "key": "foundation",
+      "url": "https://ecu.edu.eg/faculties/media/general-foundation-years/"
+    },
+    {
+      "key": "dj",
+      "url": "https://ecu.edu.eg/faculties/media/digital-journalism-and-graphic-design/"
+    },
+    {
+      "key": "av",
+      "url": "https://ecu.edu.eg/faculties/media/audio-and-visual-production/"
+    },
+    {
+      "key": "imc",
+      "url": "https://ecu.edu.eg/faculties/media/integrated-marketing-communication/"
+    },
+    {
+      "key": "activities",
+      "url": "https://ecu.edu.eg/faculties/media/student-activities/"
+    },
+    {
+      "key": "gallery",
+      "url": "https://ecu.edu.eg/photo-gallery/"
+    },
+    {
+      "key": "news",
+      "url": "https://ecu.edu.eg/news/"
+    }
+  ],
+  "homepageEditorial": {
+    "heroEyebrow": "Egyptian Chinese University",
+    "heroHeadlineProposal": "Knowledge in practice. Opportunity in motion.",
+    "heroSummaryProposal": "Explore ECU’s practice-oriented approach to higher education, its faculties, and academic connections.",
+    "editorialStatus": "proposed_copy_requires_review",
+    "priorityRoutes": [
+      "/faculties",
+      "/programmes",
+      "/admissions",
+      "/about",
+      "/research",
+      "/contact"
+    ],
+    "homepageSections": [
+      "Hero",
+      "Priority journeys",
+      "Why ECU",
+      "Featured faculties",
+      "Program discovery",
+      "Admissions",
+      "Verified archived stories",
+      "Research and cooperation",
+      "Contact"
+    ]
+  },
+  "university": [
+    {
+      "id": "uni-profile",
+      "title": "Egyptian Chinese University",
+      "summary": "Established under Egyptian Presidential Decree No. 118 of 2013. ECU describes itself as a productive, technology-oriented university combining academic study with practical training and links to industry.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/university-profile/"
+      ],
+      "verification": "official_public_source",
+      "kind": "institution",
+      "evergreen": true
+    },
+    {
+      "id": "uni-history-model",
+      "title": "Practical and productive education",
+      "summary": "The public university profile emphasizes workshops, practical skills, technology transfer, entrepreneurship and industry-oriented field training.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/university-profile/"
+      ],
+      "verification": "official_public_source",
+      "kind": "institution",
+      "evergreen": true
+    },
+    {
+      "id": "uni-vision",
+      "title": "ECU vision",
+      "summary": "ECU states an ambition to become a competitive, technology-based productive higher education institution with strength in research, innovation, entrepreneurship and sustainable development.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/"
+      ],
+      "verification": "official_public_source",
+      "kind": "institution",
+      "evergreen": true
+    },
+    {
+      "id": "uni-mission",
+      "title": "ECU mission",
+      "summary": "The university mission stresses preparing students with personal, social and professional competencies suited to evolving labor-market needs, including opportunities to engage with modern industries.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/"
+      ],
+      "verification": "official_public_source",
+      "kind": "institution",
+      "evergreen": true
+    },
+    {
+      "id": "uni-objectives",
+      "title": "Institutional objectives",
+      "summary": "Official objectives include institutional capacity, distinguished teaching and learning, research and innovation, community participation, international cooperation, and quality assurance.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/"
+      ],
+      "verification": "official_public_source",
+      "kind": "institution",
+      "evergreen": true
+    },
+    {
+      "id": "uni-china-links",
+      "title": "Chinese academic cooperation in the university profile",
+      "summary": "The public university profile names Beijing Jiaotong University, Liaoning University and North China Electric Power University as academic affiliations. Confirm whether each is currently active before presenting as an active partnership.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/university-profile/"
+      ],
+      "verification": "official_public_source",
+      "kind": "partnerships",
+      "timeSensitive": true,
+      "publishStatus": "editorial_recheck"
+    },
+    {
+      "id": "uni-branches",
+      "title": "Published campus addresses",
+      "summary": "The website lists a Heliopolis branch at Gesr El Suez Street behind Tagneed Bridge, and a Nasr City branch in Al Hay Al Asher, Cairo.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "kind": "contact",
+      "branches": [
+        {
+          "name": "Heliopolis Branch",
+          "address": "Gesr El Suez St., behind Tagneed Bridge, Cairo, Egypt"
+        },
+        {
+          "name": "Nasr City Branch",
+          "address": "Al Hay Al Asher, Nasr City, Cairo, Egypt"
+        }
+      ],
+      "timeSensitive": true,
+      "publishStatus": "verify_contact_before_publish"
+    }
+  ],
+  "faculties": [
+    {
+      "id": "faculty-computers-information-systems",
+      "title": "Computers and Information Systems",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "computers-information-systems",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Computers and Information Systems"
+    },
+    {
+      "id": "faculty-engineering-technology",
+      "title": "Engineering and Technology",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "engineering-technology",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Engineering and Technology"
+    },
+    {
+      "id": "faculty-pharmacy-drug-technology",
+      "title": "Pharmacy and Drug Technology",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "pharmacy-drug-technology",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Pharmacy and Drug Technology"
+    },
+    {
+      "id": "faculty-physical-therapy",
+      "title": "Physical Therapy",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "physical-therapy",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Physical Therapy"
+    },
+    {
+      "id": "faculty-economics-international-trade",
+      "title": "Economics and International Trade",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "economics-international-trade",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Economics and International Trade"
+    },
+    {
+      "id": "faculty-arts-design",
+      "title": "Arts and Design",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "arts-design",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Arts and Design"
+    },
+    {
+      "id": "faculty-veterinary-medicine",
+      "title": "Veterinary Medicine",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "veterinary-medicine",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Veterinary Medicine"
+    },
+    {
+      "id": "faculty-mass-communication",
+      "title": "Mass Communication",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "mass-communication",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Mass Communication"
+    },
+    {
+      "id": "faculty-literary-studies",
+      "title": "Literary Studies",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "literary-studies",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Literary Studies"
+    },
+    {
+      "id": "faculty-law",
+      "title": "Law",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "law",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Law"
+    },
+    {
+      "id": "faculty-nursing",
+      "title": "Nursing",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "nursing",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Nursing"
+    },
+    {
+      "id": "faculty-humanities-gis-surveying",
+      "title": "Humanities (GIS & Surveying)",
+      "summary": "Listed in ECU’s public faculty directory. See individual faculty pages for verified details.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/"
+      ],
+      "verification": "official_public_source",
+      "slug": "humanities-gis-surveying",
+      "kind": "faculty",
+      "liveAvailability": "confirm_current_intake",
+      "sourceDirectoryName": "Humanities (GIS & Surveying)"
+    }
+  ],
+  "facultyDetails": [
+    {
+      "id": "faculty-mass-communication",
+      "title": "Mass Communication",
+      "summary": "The faculty’s public page identifies three academic departments and publishes its dean’s welcome and staff directory.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/"
+      ],
+      "verification": "official_public_source",
+      "kind": "faculty-details",
+      "facultyId": "faculty-mass-communication",
+      "deanListed": "Prof. Dr. Sara Elmaghraby",
+      "leadershipStatus": "reconfirm_current",
+      "departments": [
+        {
+          "id": "dept-digital-journalism-graphic-design",
+          "name": "Digital Journalism and Graphic Design",
+          "sourceUrl": "https://ecu.edu.eg/faculties/media/digital-journalism-and-graphic-design/"
+        },
+        {
+          "id": "dept-audio-visual-production",
+          "name": "Audio-Visual Production",
+          "sourceUrl": "https://ecu.edu.eg/faculties/media/audio-and-visual-production/"
+        },
+        {
+          "id": "dept-integrated-marketing-communications",
+          "name": "Integrated Marketing Communication",
+          "sourceUrl": "https://ecu.edu.eg/faculties/media/integrated-marketing-communication/"
+        }
+      ]
+    }
+  ],
+  "facultyLearningRecords": [
+    {
+      "id": "mc-foundation",
+      "title": "General Foundation Years",
+      "summary": "The first two years develop foundations in communication, critical thinking and media practice before students enter specialized study paths.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/general-foundation-years/"
+      ],
+      "verification": "official_public_source",
+      "kind": "academic-structure",
+      "facultyId": "faculty-mass-communication",
+      "notIndependentDegree": true
+    },
+    {
+      "id": "mc-digital-journalism",
+      "title": "Digital Journalism and Graphic Design",
+      "summary": "The department covers digital writing and publishing, television journalism, and graphic design for journalism, combining responsible reporting with visual communication.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/digital-journalism-and-graphic-design/"
+      ],
+      "verification": "official_public_source",
+      "kind": "department-program",
+      "facultyId": "faculty-mass-communication",
+      "tracks": [
+        "Digital Writing and Publishing",
+        "Television Journalism",
+        "Graphic Design for Journalism"
+      ],
+      "degreeLevel": "not_confirmed"
+    },
+    {
+      "id": "mc-audio-visual",
+      "title": "Audio-Visual Production",
+      "summary": "The department covers cinematography, editing, broadcast production, sound, dubbing, voice-over and applied audiovisual projects.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/audio-and-visual-production/"
+      ],
+      "verification": "official_public_source",
+      "kind": "department-program",
+      "facultyId": "faculty-mass-communication",
+      "tracks": [
+        "Audiovisual and digital production",
+        "Voice-over and dubbing"
+      ],
+      "degreeLevel": "not_confirmed"
+    },
+    {
+      "id": "mc-integrated-marketing",
+      "title": "Integrated Marketing Communication",
+      "summary": "The program combines digital marketing communication with public relations and corporate communication, with practical projects in campaigns and reputation management.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/integrated-marketing-communication/"
+      ],
+      "verification": "official_public_source",
+      "kind": "department-program",
+      "facultyId": "faculty-mass-communication",
+      "tracks": [
+        "Digital Marketing Communications",
+        "Public Relations and Corporate Communications"
+      ],
+      "degreeLevel": "not_confirmed"
+    }
+  ],
+  "academicAreas": [
+    {
+      "id": "eng-subject-areas",
+      "title": "Engineering and Technology areas",
+      "summary": "The official admissions portal describes study areas including construction, energy and renewable energy, software and IT engineering, mechatronics, and petroleum and gas engineering. Confirm formal degree titles before publishing a program catalog.",
+      "sourceUrls": [
+        "https://admission.ecu.edu.eg/"
+      ],
+      "verification": "official_public_source",
+      "kind": "academic-areas",
+      "facultyId": "faculty-engineering-technology",
+      "areas": [
+        "Construction and Building Engineering",
+        "Energy and Renewable Energy Engineering",
+        "Software Engineering and Information Technology",
+        "Mechatronics Engineering",
+        "Petroleum and Gas Engineering"
+      ],
+      "isDegreeCatalogue": false
+    },
+    {
+      "id": "cis-subject-areas",
+      "title": "Computing and Information Systems subjects",
+      "summary": "The official admissions portal describes computer science, information systems, artificial intelligence, cybersecurity and data science as learning areas. These are not necessarily separately awarded degrees.",
+      "sourceUrls": [
+        "https://admission.ecu.edu.eg/"
+      ],
+      "verification": "official_public_source",
+      "kind": "academic-areas",
+      "facultyId": "faculty-computers-information-systems",
+      "areas": [
+        "Computer Science",
+        "Information Systems",
+        "Artificial Intelligence",
+        "Cybersecurity",
+        "Data Science"
+      ],
+      "isDegreeCatalogue": false
+    },
+    {
+      "id": "arts-subject-areas",
+      "title": "Arts and Design areas",
+      "summary": "The official admissions portal identifies areas including film and television production, interior and furniture design, visual arts, graphic design and multimedia, industrial product design and fashion design. Confirm the university’s current formal program taxonomy.",
+      "sourceUrls": [
+        "https://admission.ecu.edu.eg/"
+      ],
+      "verification": "official_public_source",
+      "kind": "academic-areas",
+      "facultyId": "faculty-arts-design",
+      "areas": [
+        "Film and Television Production",
+        "Interior and Furniture Design",
+        "Visual Arts",
+        "Graphic Design and Multimedia",
+        "Industrial Product Design",
+        "Fashion Design"
+      ],
+      "isDegreeCatalogue": false
+    }
+  ],
+  "admissions": [
+    {
+      "id": "ad-egyptian-secondary",
+      "title": "Egyptian Secondary School Certificate",
+      "summary": "Published requirements refer applicants to minimum admission percentages announced by Egypt’s Supreme Council of Private Universities. Do not infer current minimum percentages.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/admission/"
+      ],
+      "verification": "official_public_source",
+      "kind": "admissions",
+      "certificateType": "egyptian-secondary",
+      "requirements": [
+        "Meet the officially announced admission thresholds for the relevant intake and faculty."
+      ],
+      "documents": [
+        "Original secondary school certificate",
+        "Original birth certificate",
+        "Copy of national ID for Egyptian applicants, or passport",
+        "Six recent passport-size photographs with white background",
+        "Military forms for Egyptian male applicants where applicable"
+      ],
+      "policyStatus": "historical_public_guidance_reconfirm_2026_2027"
+    },
+    {
+      "id": "ad-arab-certificate",
+      "title": "Secondary Certificates from Arab Countries",
+      "summary": "The published policy distinguishes scientific certificate requirements for Physical Therapy, Pharmacy and Engineering, and other certificate pathways for Economics and International Trade; eligibility requires current confirmation.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/admission/"
+      ],
+      "verification": "official_public_source",
+      "kind": "admissions",
+      "certificateType": "arab-secondary",
+      "requirements": [
+        "Published guidance describes science-stream eligibility for specific science and engineering faculties.",
+        "Minimum accepted percentage is governed by current official decisions."
+      ],
+      "documents": [
+        "Original certificate authenticated by appropriate diplomatic or foreign-affairs authorities",
+        "Country-specific evidence or recommendation letters where applicable",
+        "Original birth certificate",
+        "Copy of national ID for Egyptian applicants, or passport",
+        "Six recent passport-size photographs with white background",
+        "Military forms for Egyptian male applicants where applicable"
+      ],
+      "policyStatus": "historical_public_guidance_reconfirm_2026_2027"
+    },
+    {
+      "id": "ad-igcse",
+      "title": "IGCSE",
+      "summary": "The official page describes eight qualifying O-Level subjects and additional advanced mathematics for Engineering, with faculty-specific subject requirements; verify current equivalency and thresholds.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/admission/"
+      ],
+      "verification": "official_public_source",
+      "kind": "admissions",
+      "certificateType": "igcse",
+      "requirements": [
+        "Published guidance lists eight qualifying O-Level subjects.",
+        "Engineering-specific mathematics requirements may apply.",
+        "Grades and exam-session rules must be confirmed for the current intake."
+      ],
+      "documents": [
+        "Certified IGCSE result slips",
+        "Proof of 12 years of schooling or specified equivalent",
+        "Original birth certificate",
+        "Copy of national ID for Egyptian applicants, or passport",
+        "Six recent passport-size photographs with white background",
+        "Military forms for Egyptian male applicants where applicable"
+      ],
+      "policyStatus": "historical_public_guidance_reconfirm_2026_2027"
+    },
+    {
+      "id": "ad-american-diploma",
+      "title": "American Diploma",
+      "summary": "The public guidance describes transcript subjects, grade distributions and test requirements; any historic SAT/ACT/EST scores must not be used as current eligibility rules without approval.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/admission/"
+      ],
+      "verification": "official_public_source",
+      "kind": "admissions",
+      "certificateType": "american-diploma",
+      "requirements": [
+        "Published guidance describes eight qualifying school subjects and grade-level conditions.",
+        "Engineering may require advanced mathematics or additional examinations.",
+        "Current test policies and equivalency rules must be verified."
+      ],
+      "documents": [
+        "Authenticated final high-school transcript",
+        "Applicable standardized examination records and authentication",
+        "Proof of 12 years of schooling",
+        "Original birth certificate",
+        "Copy of national ID for Egyptian applicants, or passport",
+        "Six recent passport-size photographs with white background",
+        "Military forms for Egyptian male applicants where applicable"
+      ],
+      "policyStatus": "historical_public_guidance_reconfirm_2026_2027"
+    },
+    {
+      "id": "ad-ib",
+      "title": "International Baccalaureate",
+      "summary": "ECU’s public page describes six subjects including three Higher Level subjects and faculty-specific science/mathematics requirements; current acceptance must be confirmed.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/admission/"
+      ],
+      "verification": "official_public_source",
+      "kind": "admissions",
+      "certificateType": "ib",
+      "requirements": [
+        "Published guidance describes six subjects including three Higher Level subjects.",
+        "Engineering and Computer/IT-related disciplines may require HL Mathematics and Physics.",
+        "Confirm current minimum score and equivalency standards."
+      ],
+      "documents": [
+        "Authenticated final IB transcript and diploma",
+        "Proof of 12 years of schooling",
+        "Original birth certificate",
+        "Copy of national ID for Egyptian applicants, or passport",
+        "Six recent passport-size photographs with white background",
+        "Military forms for Egyptian male applicants where applicable"
+      ],
+      "policyStatus": "historical_public_guidance_reconfirm_2026_2027"
+    },
+    {
+      "id": "ad-abitur",
+      "title": "German Abitur",
+      "summary": "Published guidance describes Grade 12 completion and a transcript including seven subjects; exact scores and certification procedures require current confirmation.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/about-ecu/admission/"
+      ],
+      "verification": "official_public_source",
+      "kind": "admissions",
+      "certificateType": "abitur",
+      "requirements": [
+        "Complete Grade 12 under the published qualification framework.",
+        "Confirm accepted subjects and marks for the current intake."
+      ],
+      "documents": [
+        "Authenticated Abitur certificate and translation where necessary",
+        "Proof of 12 years of schooling",
+        "Original birth certificate",
+        "Copy of national ID for Egyptian applicants, or passport",
+        "Six recent passport-size photographs with white background",
+        "Military forms for Egyptian male applicants where applicable"
+      ],
+      "policyStatus": "historical_public_guidance_reconfirm_2026_2027"
+    }
+  ],
+  "archivedStories": [
+    {
+      "id": "activity-media-quality-day",
+      "title": "Mass Communication quality and academic pathways awareness day",
+      "summary": "A student awareness activity covered quality culture, student rights and academic pathways in media.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/student-activities/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-activity",
+      "facultyId": "faculty-mass-communication",
+      "eventDate": "2025-11-17",
+      "datePrecision": "day"
+    },
+    {
+      "id": "activity-media-akhbar",
+      "title": "First-year Mass Communication visit to Akhbar Al-Youm",
+      "summary": "Students visited the media organization to learn about newsroom operations, libraries, archives and digital publishing processes.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/student-activities/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-activity",
+      "facultyId": "faculty-mass-communication",
+      "eventDate": "2025-11-06",
+      "datePrecision": "day"
+    },
+    {
+      "id": "activity-media-museum",
+      "title": "Mass Communication student visit to Grand Egyptian Museum",
+      "summary": "The faculty’s public activities listing records a student visit to the Grand Egyptian Museum.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/student-activities/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-activity",
+      "facultyId": "faculty-mass-communication",
+      "eventDate": "2025-11-25",
+      "datePrecision": "day"
+    },
+    {
+      "id": "activity-media-ad-workshop",
+      "title": "Advertising industry workshop",
+      "summary": "The Faculty of Mass Communication hosted an academic workshop examining advertising and digital marketing in Egypt and the Arab world.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/student-activities/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-activity",
+      "facultyId": "faculty-mass-communication",
+      "eventDate": "2025-10-06",
+      "datePrecision": "day"
+    },
+    {
+      "id": "activity-media-cartoon",
+      "title": "Press cartooning workshop",
+      "summary": "The faculty hosted a workshop about cartoon art and its evolution across print and digital media.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/faculties/media/student-activities/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-activity",
+      "facultyId": "faculty-mass-communication",
+      "eventDate": "2025-11-13",
+      "datePrecision": "day"
+    },
+    {
+      "id": "gallery-chinese-books",
+      "title": "Chinese-language book handover ceremony",
+      "summary": "ECU’s official photo gallery records a handover ceremony for Chinese books sponsored by Sinopec.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/photo-gallery/"
+      ],
+      "verification": "official_public_source",
+      "kind": "gallery-entry",
+      "eventDate": null,
+      "datePrecision": "unknown"
+    },
+    {
+      "id": "gallery-arts-workshop",
+      "title": "Arts and Design digital technology workshop",
+      "summary": "ECU’s gallery records an Arts and Design workshop focused on contemporary systems and digital technologies.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/photo-gallery/"
+      ],
+      "verification": "official_public_source",
+      "kind": "gallery-entry",
+      "facultyId": "faculty-arts-design",
+      "eventDate": null,
+      "datePrecision": "unknown"
+    },
+    {
+      "id": "gallery-chinese-universities",
+      "title": "Visit by representatives of Chinese universities",
+      "summary": "ECU’s photo gallery lists a visit by representatives of 24 Chinese universities in 2023.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/photo-gallery/"
+      ],
+      "verification": "official_public_source",
+      "kind": "gallery-entry",
+      "eventDate": "2023",
+      "datePrecision": "year"
+    },
+    {
+      "id": "gallery-one-health",
+      "title": "One Health veterinary research workshop visit",
+      "summary": "ECU’s official photo gallery describes a University of Liverpool College of Veterinary Medicine research-team visit connected with a One Health workshop.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/photo-gallery/"
+      ],
+      "verification": "official_public_source",
+      "kind": "gallery-entry",
+      "facultyId": "faculty-veterinary-medicine",
+      "eventDate": null,
+      "datePrecision": "unknown"
+    },
+    {
+      "id": "news-shanghai-2024",
+      "title": "Students from Shanghai University in China",
+      "summary": "A news item in ECU’s archive discusses students connected with Shanghai University. Preserve as 2024 archive content; verify article details before writing a full story.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/news/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-news",
+      "publishDate": "2024-08-05"
+    },
+    {
+      "id": "news-pharmacists-2024",
+      "title": "Cooperation protocol with Cairo Pharmacists Syndicate",
+      "summary": "A published 2024 news item announces a cooperation protocol involving the Faculty of Economics and International Trade and the Cairo Pharmacists Syndicate. Reverify details before asserting an ongoing partnership.",
+      "sourceUrls": [
+        "https://ecu.edu.eg/news/"
+      ],
+      "verification": "official_public_source",
+      "kind": "archived-news",
+      "publishDate": "2024-07-23"
+    }
+  ],
+  "services": [
+    {
+      "id": "admissions-application",
+      "label": "ECU admissions platform",
+      "url": "https://admission.ecu.edu.eg/",
+      "role": "external_transactional",
+      "verification": "official_site"
+    },
+    {
+      "id": "library",
+      "label": "Library",
+      "sourcePage": "https://ecu.edu.eg/faculties/",
+      "role": "external_service",
+      "verification": "service_link_present_destination_recheck"
+    },
+    {
+      "id": "lms",
+      "label": "LMS",
+      "sourcePage": "https://ecu.edu.eg/faculties/",
+      "role": "external_service",
+      "verification": "service_link_present_destination_recheck"
+    }
+  ],
+  "mediaCandidates": [
+    {
+      "id": "gallery-arts",
+      "sourcePage": "https://ecu.edu.eg/photo-gallery/",
+      "subject": "Arts and Design workshop",
+      "directImageUrl": null,
+      "rights": "unverified",
+      "publish": false,
+      "recommendation": "Extract original media URL and license separately; do not use a search-result or thumbnail URL as approved media."
+    },
+    {
+      "id": "gallery-one-health",
+      "sourcePage": "https://ecu.edu.eg/photo-gallery/",
+      "subject": "One Health veterinary visit",
+      "directImageUrl": null,
+      "rights": "unverified",
+      "publish": false,
+      "recommendation": "Extract original media URL and license separately; do not use a search-result or thumbnail URL as approved media."
+    },
+    {
+      "id": "gallery-chinese-books",
+      "sourcePage": "https://ecu.edu.eg/photo-gallery/",
+      "subject": "Chinese books handover",
+      "directImageUrl": null,
+      "rights": "unverified",
+      "publish": false,
+      "recommendation": "Extract original media URL and license separately; do not use a search-result or thumbnail URL as approved media."
+    },
+    {
+      "id": "gallery-chinese-universities",
+      "sourcePage": "https://ecu.edu.eg/photo-gallery/",
+      "subject": "Visit of 24 Chinese universities",
+      "directImageUrl": null,
+      "rights": "unverified",
+      "publish": false,
+      "recommendation": "Extract original media URL and license separately; do not use a search-result or thumbnail URL as approved media."
+    }
+  ],
+  "unknowns": {
+    "tuition": "not_verified",
+    "scholarships": "not_verified",
+    "2026_27_cutoffs": "not_verified",
+    "current_course_catalogue": "not_verified",
+    "current_faculty_deans": "reverify",
+    "formal_programme_degrees": "needs_current_catalogue",
+    "approved_photography": "none_provided",
+    "chinese_translations": "editorial_review_required"
+  },
+  "counts": {
+    "university": 7,
+    "faculties": 12,
+    "facultyDetails": 1,
+    "facultyLearningRecords": 4,
+    "academicAreas": 3,
+    "admissions": 6,
+    "archivedStories": 11,
+    "mediaCandidates": 4
+  }
+}

@@ -508,6 +508,29 @@ All 11 imported image records remain `unverified_requires_ecu_approval` and `do_
 
 The local Next.js executable is still unavailable, so the production build and new page browser verification remain blocked.
 
+## Critical Content Integration — 2026-10-21
+
+The verified dataset [ecu_verified_content_2026-10-21.json](../data/imports/ecu_verified_content_2026-10-21.json) is now integrated through [verifiedContent.js](../lib/verifiedContent.js).
+
+Dataset counts:
+
+- 12 faculties.
+- 1 detailed faculty record.
+- 4 Mass Communication learning records.
+- 3 academic-area records explicitly not representing a degree catalogue.
+- 6 admissions categories.
+- 11 archived stories/activities.
+- 4 media candidates, none published.
+
+Implemented:
+
+- [AdmissionsGuide.js](../components/AdmissionsGuide.js) provides six certificate tabs and a local preparation checklist. It does not upload documents or make eligibility decisions.
+- [admissions/page.js](../app/admissions/page.js) now consumes the new records and labels public requirements as historical guidance requiring current ECU confirmation.
+- [faculties/[slug]/page.js](../app/faculties/[slug]/page.js) now provides a Mass Communication reference experience with three published departments, leadership reconfirmation status, foundation years, learning tracks and official source links.
+- [page.js](../app/page.js) now uses the verified ECU profile summary and practical/productive education record rather than generic homepage copy.
+
+The dataset is primarily English and does not provide approved Arabic or Simplified Chinese translations. Media candidates remain excluded from public rendering until ECU grants reuse permission.
+
 ### Phase 11 verification status
 
 | Area | Result |

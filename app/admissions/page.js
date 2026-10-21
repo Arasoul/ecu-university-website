@@ -1,14 +1,14 @@
 import InformationLayout from '../../components/InformationLayout';
 import { admissionsTopics, officialSources } from '../../lib/siteContent';
-import { getAdmissionRecords } from '../../lib/importedContent';
+import AdmissionsGuide from '../../components/AdmissionsGuide';
+import { verifiedAdmissions } from '../../lib/verifiedContent';
 import '../information.css';
 
 export const metadata = { title: 'Admissions | Egyptian Chinese University' };
 
 export default function AdmissionsPage() {
-  const admissionRecords = getAdmissionRecords();
   return <InformationLayout eyebrow="ADMISSIONS" title="Find the requirements before you apply." intro="Use this page as a clear starting point, then confirm current requirements and instructions on ECU’s official admissions destination.">
     <section className="information-section wrap"><div className="information-grid"><div><p className="eyebrow">APPLICATION GUIDANCE</p><h2>Prepare with the current official instructions.</h2><p>ECU publishes entry requirements and required documents for Egyptian, Arab and international secondary certificates. The live admissions platform remains the authoritative place to apply.</p><div className="info-cards">{admissionsTopics.map((topic, index) => <article className="info-card" key={topic}><span className="eyebrow">0{index + 1}</span><p>{topic}</p></article>)}</div></div><div><div className="source-panel"><p className="eyebrow">APPLICATION DESTINATION</p><p>Do not submit personal information through this informational page. Continue to ECU’s official admissions service.</p><a className="button" href={officialSources.admissions} target="_blank" rel="noreferrer">Open admissions <span aria-hidden="true">-&gt;</span></a></div><p className="status-note">Tuition, deadlines, scholarship eligibility and FAQ answers are not locally published until ECU provides a current approved record.</p></div></div></section>
-    <section className="information-section wrap admissions-records"><div className="section-intro"><div><p className="eyebrow">CERTIFICATE PATHWAYS</p><h2>Choose the guidance that matches your qualification.</h2></div><p>These source-backed summaries require confirmation for the current admissions cycle.</p></div><div className="admission-grid">{admissionRecords.map((record) => <article className="admission-record" key={record.id}><p className="eyebrow">{record.id.replace('admission-', '').replace('-', ' ')}</p><h3>{record.title}</h3><p>{record.summary}</p>{record.documents ? <ul className="content-list">{record.documents.map((document) => <li key={document}>{document}</li>)}</ul> : null}{record.highlights ? <ul className="content-list">{record.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul> : null}<small>{record.freshness || 'Confirm current requirements with ECU.'}</small><a className="text-link" href={record.source_url} target="_blank" rel="noreferrer">Read official source -&gt;</a></article>)}</div></section>
+    <section className="information-section wrap admissions-records"><div className="section-intro"><div><p className="eyebrow">CERTIFICATE PATHWAYS</p><h2>Choose the guidance that matches your qualification.</h2></div><p>These source-backed summaries require confirmation for the current admissions cycle.</p></div><AdmissionsGuide records={verifiedAdmissions} /></section>
   </InformationLayout>;
 }
