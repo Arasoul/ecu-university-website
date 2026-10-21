@@ -4,6 +4,7 @@ import ProgrammeList from '../../../components/ProgrammeList';
 import { facultyDirectory, getFaculty } from '../../../lib/faculties';
 import '../faculties.css';
 import { getFacultyDetail, getFacultyLearningRecords } from '../../../lib/verifiedContent';
+import { facultyEnrichment } from '../../../lib/contentEnrichment';
 
 export function generateStaticParams() {
   return facultyDirectory.map(({ slug }) => ({ slug }));
@@ -17,6 +18,7 @@ export default function FacultyPage({ params }) {
   const isMassCommunication = faculty.slug === 'mass-communication';
   const massDetail = isMassCommunication ? getFacultyDetail('faculty-mass-communication') : null;
   const massLearning = isMassCommunication ? getFacultyLearningRecords('faculty-mass-communication') : [];
+  const enrichedFaculty = facultyEnrichment.find((record) => record.facultySlug === faculty.slug);
   const overviewFallback = `ECU has published this faculty in its directory. Further programme and department content will be added when it is available from an official ECU source.`;
   return <main>
     <SiteHeader />
@@ -26,6 +28,7 @@ export default function FacultyPage({ params }) {
 
     {faculty.programs?.length ? <div id="programmes"><ProgrammeList programs={faculty.programs} /></div> : null}
     {massDetail ? <section className="section wrap faculty-content-story"><div className="section-intro"><div><p className="eyebrow">REFERENCE FACULTY EXPERIENCE</p><h2>Communication, creativity and professional practice.</h2></div><p>{massDetail.summary}</p></div><div className="faculty-departments"><div><p className="eyebrow">PUBLISHED DEPARTMENTS</p>{massDetail.departments.map((department) => <a href={department.sourceUrl} target="_blank" rel="noreferrer" key={department.id}><strong>{department.name}</strong><span>Read official department source -&gt;</span></a>)}</div><aside><p className="eyebrow">ACADEMIC LEADERSHIP</p><h3>{massDetail.deanListed}</h3><p>Leadership listing requires reconfirmation before it is treated as current.</p></aside></div><div className="faculty-learning-grid">{massLearning.map((record) => <article key={record.id}><p className="eyebrow">{record.kind === 'academic-structure' ? 'FOUNDATION' : 'LEARNING AREA'}</p><h3>{record.title}</h3><p>{record.summary}</p>{record.tracks ? <ul className="content-list">{record.tracks.map((track) => <li key={track}>{track}</li>)}</ul> : null}<a className="text-link" href={record.sourceUrls[0]} target="_blank" rel="noreferrer">Read source -&gt;</a></article>)}</div></section> : null}
+    {enrichedFaculty ? <section className="section wrap faculty-content-story"><div className="section-intro"><div><p className="eyebrow">SOURCE-LED FACULTY PROFILE</p><h2>{enrichedFaculty.title}</h2></div><p>{enrichedFaculty.overview}</p></div><div className="faculty-learning-grid"><article><p className="eyebrow">STUDY STRUCTURE</p><h3>{enrichedFaculty.studyStructure}</h3><p>Study duration is reproduced from the linked ECU source and should be reconfirmed for current admissions.</p></article><article><p className="eyebrow">PUBLISHED AREAS</p><ul className="content-list">{enrichedFaculty.publishedAreas.map((area) => <li key={area}>{area}</li>)}</ul></article></div><a className="text-link" href={enrichedFaculty.sourceUrl} target="_blank" rel="noreferrer">Read official faculty source -&gt;</a></section> : null}
 
     <section id="source" className="section faculty-source"><div className="wrap source-grid"><div><p className="eyebrow">MORE FACULTY INFORMATION</p><h2>Use the official ECU source for current details.</h2></div><div><p>Departments, laboratories, academic staff, research, achievements, events and contact records are not included here until ECU provides approved content for publication.</p><a className="text-link" href={faculty.sourceUrl} target="_blank" rel="noreferrer">Open {faculty.name} source <span aria-hidden="true">-&gt;</span></a></div></div></section>
   </main>;
