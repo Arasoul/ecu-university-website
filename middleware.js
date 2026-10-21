@@ -8,7 +8,10 @@ export function middleware(request) {
   const pathname = request.nextUrl.pathname.replace(`/${segment}`, '') || '/';
   const url = request.nextUrl.clone();
   url.pathname = pathname;
-  const response = NextResponse.rewrite(url);
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-ecu-locale', segment);
+  requestHeaders.set('x-ecu-path', request.nextUrl.pathname);
+  const response = NextResponse.rewrite(url, { request: { headers: requestHeaders } });
   response.cookies.set('ecu-locale', segment, { path: '/', maxAge: 31536000, sameSite: 'lax' });
   return response;
 }
