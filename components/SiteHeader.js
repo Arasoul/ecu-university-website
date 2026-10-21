@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { isLocale, localeKey, translations } from '../lib/translations';
@@ -57,9 +58,9 @@ export default function SiteHeader({ onLocaleChange }) {
 
   const t = translations[locale];
   return <header className="site-header">
-    <div className="utility-bar"><div className="wrap utility-inner"><span>Egyptian Chinese University</span><div className="utility-actions"><Link href="/contact">{t.students}</Link><Link href="/contact">{t.staff}</Link><Link href="/about">{t.alumni}</Link><Link href="/contact">{t.library}</Link><a href="https://ecu.edu.eg/" target="_blank" rel="noreferrer">{t.official}</a><label><span className="sr-only">{t.language}</span><select aria-label={t.language} value={locale} onChange={changeLocale}><option value="en">EN</option><option value="ar">AR</option><option value="zh">中文</option></select></label></div></div></div>
+    <div className="utility-bar"><div className="wrap utility-inner"><span>Egyptian Chinese University</span><div className="utility-actions"><Link href="/contact">{t.students}</Link><Link href="/contact">{t.staff}</Link><Link href="/about">{t.alumni}</Link><Link href="/services">{t.library}</Link><label><span className="sr-only">{t.language}</span><select aria-label={t.language} value={locale} onChange={changeLocale}><option value="en">EN</option><option value="ar">AR</option><option value="zh">中文</option></select></label></div></div></div>
     <div className="nav wrap">
-      <Link className="brand" href="/" onClick={() => setOpen(false)}><img src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" /><span>Egyptian<br />Chinese University</span></Link>
+      <Link className="brand" href="/" onClick={() => setOpen(false)}><Image src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" width={64} height={64} priority /><span>Egyptian<br />Chinese University</span></Link>
       <nav id="main-menu" aria-label="Primary navigation" className={open ? 'nav-links is-open' : 'nav-links'}>
         <Link href="/about" onClick={() => setOpen(false)}>{t.about}</Link>
         <div className="nav-menu"><button className="nav-menu-trigger" aria-expanded={academicsOpen} aria-controls="academics-menu" onClick={() => setAcademicsOpen((value) => !value)}>{t.academics}<span aria-hidden="true">{academicsOpen ? '−' : '+'}</span></button>{academicsOpen && <div id="academics-menu" className="mega-menu"><div><strong>{t.academics}</strong><Link href="/faculties" onClick={() => { setOpen(false); setAcademicsOpen(false); }}>{t.faculties}</Link><Link href="/programmes" onClick={() => { setOpen(false); setAcademicsOpen(false); }}>{t.programmes}</Link></div><div><strong>{t.research}</strong><Link href="/research" onClick={() => { setOpen(false); setAcademicsOpen(false); }}>{t.researchOverview}</Link><Link href="/services" onClick={() => { setOpen(false); setAcademicsOpen(false); }}>{t.learningResources}</Link></div><div className="mega-feature"><span>{t.startHere}</span><b>{t.exploreMessage}</b><Link href="/programmes" onClick={() => { setOpen(false); setAcademicsOpen(false); }}>{t.exploreProgrammes}</Link></div></div>}</div>

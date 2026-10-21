@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0",
+  "lastReviewed": "2026-10-21",
+  "publicationRule": "Only records with written authorization or a documented reuse license may be published.",
+  "publishedAssets": [
+    {
+      "filePath": "public/assets/images/ecu-logo.png",
+      "subject": "Approved ECU logo supplied in the repository",
+      "sourceUrl": null,
+      "rightsStatus": "repository-supplied",
+      "approvalStatus": "available-for-brand-use",
+      "altText": "Egyptian Chinese University"
+    }
+  ],
+  "approvalCandidates": [
+    {
+      "filePath": null,
+      "subject": "Central Research Lab video and instruments media",
+      "campus": "university-wide",
+      "sourceUrl": "https://ecu.edu.eg/central-research-lab/",
+      "credit": null,
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting-written-authorization",
+      "altText": "Central Research Lab",
+      "recommendedUsage": "Research facility feature after approval"
+    },
+    {
+      "filePath": null,
+      "subject": "Veterinary One Health workshop / research-team visit",
+      "campus": null,
+      "sourceUrl": "https://ecu.edu.eg/photo-gallery/",
+      "credit": null,
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting-written-authorization",
+      "altText": "Veterinary research collaboration",
+      "recommendedUsage": "Campus or faculty feature after approval"
+    },
+    {
+      "filePath": null,
+      "subject": "Visit by representatives of 24 Chinese universities",
+      "campus": null,
+      "sourceUrl": "https://ecu.edu.eg/photo-gallery/",
+      "credit": null,
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting-written-authorization",
+      "altText": "International university delegation",
+      "recommendedUsage": "International cooperation feature after approval"
+    },
+    {
+      "filePath": null,
+      "subject": "Chinese books handover",
+      "campus": null,
+      "sourceUrl": "https://ecu.edu.eg/photo-gallery/",
+      "credit": null,
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting-written-authorization",
+      "altText": "Chinese books handover",
+      "recommendedUsage": "Cooperation or library feature after approval"
+    }
+  ],
+  "approvedPhotographCount": 0
+}
