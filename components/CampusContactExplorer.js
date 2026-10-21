@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { campusContactRecords, verifiedContactChannels } from '../lib/campus/contact';
 
@@ -18,8 +19,8 @@ const copy = {
     copyFailed: 'Copy is unavailable; select the address above.',
     map: 'Campus map',
     mapFallback: 'The map is provided as a convenience. Use the text address or Google Maps links if it is unavailable.',
-    noImage: 'Campus photography is not published',
-    noImageText: 'ECU media rights are not confirmed for the available campus images. This page uses a typography-first presentation instead of presenting unlicensed photography.',
+    noImage: 'Campus photography',
+    noImageText: 'No branch-confirmed, authorized photograph is currently published for this location.',
     hotline: 'University hotline',
     application: 'Official application portal',
     admissions: 'Admissions guidance',
@@ -39,8 +40,8 @@ const copy = {
     copyFailed: 'النسخ غير متاح؛ حدد العنوان أعلاه.',
     map: 'خريطة الحرم',
     mapFallback: 'الخريطة للراحة فقط. استخدم العنوان النصي أو روابط خرائط Google إذا لم تتوفر الخريطة.',
-    noImage: 'لم تُنشر صور للحرم',
-    noImageText: 'لم يتم التحقق من حقوق استخدام صور الحرم المتاحة من ECU. لذلك تستخدم الصفحة عرضاً تحريرياً بدلاً من نشر صور غير مرخصة.',
+    noImage: 'صور الحرم',
+    noImageText: 'لا توجد حالياً صورة موثقة للفرع ومصرح باستخدامها لهذا الموقع.',
     hotline: 'الخط الساخن للجامعة',
     application: 'بوابة التقديم الرسمية',
     admissions: 'إرشادات القبول',
@@ -60,8 +61,8 @@ const copy = {
     copyFailed: '复制不可用；请选中上方地址。',
     map: '校区地图',
     mapFallback: '地图仅供参考。如果地图不可用，请使用文字地址或 Google 地图链接。',
-    noImage: '未发布校区照片',
-    noImageText: '现有 ECU 校区照片的再使用权尚未核实。因此本页面采用文字设计，不展示未经授权的照片。',
+    noImage: '校区照片',
+    noImageText: '目前没有为该校区发布已核实且获授权的照片。',
     hotline: '大学热线',
     application: '官方申请门户',
     admissions: '招生指南',
@@ -129,9 +130,10 @@ export default function CampusContactExplorer({ initialLocale = 'en' }) {
       </div>
       <div className="campus-map-column">
         <div className="campus-map-heading"><p className="eyebrow">{t.map}</p><span aria-hidden="true">{active.shortName}</span></div>
+        {active.media.publishable ? <figure className="campus-photo"><Image src={active.media.path} alt={active.media.alt} width={1024} height={816} sizes="(max-width: 800px) 100vw, 50vw" /></figure> : null}
         <iframe className="campus-map" title={`${active.name} map`} src={active.mapEmbedUrl} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         <p className="map-fallback">{t.mapFallback}</p>
-        <div className="campus-media-status"><p className="eyebrow">{t.noImage}</p><p>{t.noImageText}</p></div>
+        {!active.media.publishable ? <div className="campus-media-status"><p className="eyebrow">{t.noImage}</p><p>{t.noImageText}</p></div> : null}
       </div>
     </section>
     <p className="verification-note">{t.sourceStatus}</p>

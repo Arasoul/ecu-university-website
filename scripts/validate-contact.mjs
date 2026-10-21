@@ -8,7 +8,7 @@ for (const branch of campusContactRecords) {
   if (!branch.mapsSearchUrl.includes('google.com/maps/search')) throw new Error(`Missing map search URL: ${branch.id}`);
   if (!branch.directionsUrl.includes('google.com/maps/dir')) throw new Error(`Missing directions URL: ${branch.id}`);
   if (branch.faculties.length === 0) throw new Error(`Campus has no faculty associations: ${branch.id}`);
-  if (branch.media.publishable) throw new Error(`Unverified campus media is publishable: ${branch.id}`);
+  if (branch.media.publishable && branch.media.status !== 'authorized') throw new Error(`Unauthorized campus media is publishable: ${branch.id}`);
 }
 
 console.log(`Validated ${campusContactRecords.length} campus contact records, ${campusContactRecords.reduce((count, branch) => count + branch.faculties.length, 0)} faculty associations, and unverified media boundaries.`);

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0",
+  "lastReviewed": "2026-10-21",
+  "authorization": {
+    "basis": "User-confirmed authorization to reuse ECU-owned institutional photographs and branding for this replacement website.",
+    "scope": "ECU-hosted institutional photographs only; third-party, agency, stock, LinkedIn and news-outlet images remain excluded.",
+    "reviewNote": "Each published asset is sourced from ecu.edu.eg and retains its original source URL."
+  },
+  "publishedAssets": [
+    {
+      "id": "ecu-nasr-city-campus-opening",
+      "localFile": "public/images/ecu/campus/nasr-city-campus-opening.jpg",
+      "originalUrl": "https://ecu.edu.eg/wp-content/uploads/2023/12/AQ-1024x816.jpg",
+      "sourcePage": "https://ecu.edu.eg/ar/أهم-أحداث-الجامعة-المصرية-الصينية-في-س/",
+      "subject": "ECU Nasr City campus opening, glass facade",
+      "campus": "Nasr City",
+      "faculty": null,
+      "associatedContent": ["homepage", "contact", "campus-life/visit"],
+      "credit": "Egyptian Chinese University / official ECU source",
+      "approvalBasis": "User-confirmed ECU-owned institutional photography authorization",
+      "dimensions": { "width": 1024, "height": 816 },
+      "altText": "ECU Nasr City campus entrance with its glass-fronted central facade",
+      "recommendedPlacement": "Homepage hero, Nasr City campus feature and visit/contact selector",
+      "rightsStatus": "authorized-for-this-replacement-site"
+    },
+    {
+      "id": "ecu-arts-design-hall-4-students",
+      "localFile": "public/images/ecu/faculties/arts-design-students.jpg",
+      "originalUrl": "https://ecu.edu.eg/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-18-at-09.16.32_50df75fe-1024x768.jpg",
+      "sourcePage": "https://ecu.edu.eg/faculties/arts-and-design/",
+      "subject": "Faculty of Arts and Design group photo at Hall 4",
+      "campus": "Nasr City",
+      "faculty": "Arts and Design",
+      "associatedContent": ["faculties/arts-and-design", "faculties"],
+      "credit": "Egyptian Chinese University / official ECU source",
+      "approvalBasis": "User-confirmed ECU-owned institutional photography authorization",
+      "dimensions": { "width": 1024, "height": 768 },
+      "altText": "Arts and Design students and faculty gathered outside Hall 4",
+      "recommendedPlacement": "Arts and Design faculty card and detail page",
+      "rightsStatus": "authorized-for-this-replacement-site"
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "subject": "ECU older campus building",
+      "reason": "Third-party LinkedIn-hosted image; branch identification and reuse rights are unverified."
+    },
+    {
+      "subject": "Chinese scholarship council delegation",
+      "reason": "News-outlet-hosted image; third-party reuse rights are unverified."
+    }
+  ],
+  "usablePhotographCount": 2
+}

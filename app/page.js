@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import FacultyCard from '../components/FacultyCard';
 import ProgrammeFinder from '../components/ProgrammeFinder';
@@ -36,7 +37,7 @@ export default function Home() {
   return <main>
     <a className="skip-link" href="#main">{t.skip}</a>
     <SiteHeader onLocaleChange={setLang} />
-    <section className="hero hero-refined premium-hero" aria-labelledby="hero-title"><div className="hero-image" aria-hidden="true"><div className="hero-art"><span /><span /><span /></div></div><div id="main" className="wrap hero-content"><p className="eyebrow">EGYPTIAN CHINESE UNIVERSITY</p><h1 id="hero-title">Build what comes next.</h1><p className="lead">{profile.summary}</p><div className="actions"><Link className="button" href="/faculties">{t.faculties} <span aria-hidden="true">-&gt;</span></Link><Link className="text-link" href="/programmes">{t.programmes} <span aria-hidden="true">-&gt;</span></Link></div><div className="hero-index" aria-hidden="true"><span>01</span><span>ECU / ACADEMIC COMMUNITY</span></div></div></section>
+    <section className="hero hero-refined premium-hero" aria-labelledby="hero-title"><div className="hero-image"><Image className="hero-photo" src="/images/ecu/campus/nasr-city-campus-opening.jpg" alt="ECU Nasr City campus entrance with its glass-fronted central facade" fill priority sizes="(max-width: 700px) 100vw, 55vw" /><div className="hero-image-overlay" aria-hidden="true" /></div><div id="main" className="wrap hero-content"><p className="eyebrow">EGYPTIAN CHINESE UNIVERSITY</p><h1 id="hero-title">Build what comes next.</h1><p className="lead">{profile.summary}</p><div className="actions"><Link className="button" href="/faculties">{t.faculties} <span aria-hidden="true">-&gt;</span></Link><Link className="text-link" href="/programmes">{t.programmes} <span aria-hidden="true">-&gt;</span></Link></div><div className="hero-index" aria-hidden="true"><span>01</span><span>NASR CITY / ECU CAMPUS</span></div></div></section>
 
     <section className="quick wrap" aria-label="Quick access"><Link href="/faculties"><b>01</b><span>{t.faculties}</span><small>Explore ECU’s 12 faculty records</small><i aria-hidden="true">-&gt;</i></Link><Link href="#programmes"><b>02</b><span>{t.programmes}</span><small>Search published study areas</small><i aria-hidden="true">-&gt;</i></Link><Link href="/admissions"><b>03</b><span>{t.admissions}</span><small>Requirements and application</small><i aria-hidden="true">-&gt;</i></Link><Link href="/contact"><b>04</b><span>{t.contact}</span><small>Find verified campus routes</small><i aria-hidden="true">-&gt;</i></Link></section>
     <section className="section discovery-strip"><div className="wrap discovery-strip-inner"><div><p className="eyebrow">START YOUR ECU SEARCH</p><h2>Find the academic route that fits.</h2></div><div className="discovery-strip-actions"><Link className="button" href="/search">Search ECU <span aria-hidden="true">-&gt;</span></Link><Link className="outlined-link" href="/programmes">Find my programme -&gt;</Link></div></div></section>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import SiteHeader from '../../../components/SiteHeader';
 import ProgrammeList from '../../../components/ProgrammeList';
 import { facultyDirectory, getFaculty } from '../../../lib/faculties';
@@ -22,7 +23,7 @@ export default function FacultyPage({ params }) {
   const overviewFallback = `ECU has published this faculty in its directory. Further programme and department content will be added when it is available from an official ECU source.`;
   return <main>
     <SiteHeader />
-    <header className="directory-header faculty-hero"><div className="wrap"><Link className="breadcrumb" href="/faculties">All faculties</Link><div className="faculty-hero-grid"><div><p className="eyebrow">ECU FACULTY</p><h1>{faculty.name}</h1><p>{faculty.summary || 'Explore current faculty information through ECU’s official source.'}</p></div><div className="faculty-emblem" aria-hidden="true"><img src="/assets/images/ecu-logo.png" alt="" /><span>{isComputing ? 'CIS' : 'ECU'}</span></div></div><nav className="faculty-jump-nav" aria-label="On this page"><a href="#overview">Overview</a>{faculty.programs?.length ? <a href="#programmes">Programmes</a> : null}<a href="#source">Official source</a></nav></div></header>
+    <header className="directory-header faculty-hero"><div className="wrap"><Link className="breadcrumb" href="/faculties">All faculties</Link><div className="faculty-hero-grid"><div><p className="eyebrow">ECU FACULTY</p><h1>{faculty.name}</h1><p>{faculty.summary || 'Explore current faculty information through ECU’s official source.'}</p></div>{faculty.slug === 'arts-and-design' ? <Image className="faculty-hero-photo" src="/images/ecu/faculties/arts-design-students.jpg" alt="Arts and Design students and faculty gathered outside Hall 4" width={1024} height={768} priority sizes="(max-width: 700px) 100vw, 40vw" /> : <div className="faculty-emblem" aria-hidden="true"><img src="/assets/images/ecu-logo.png" alt="" /><span>{isComputing ? 'CIS' : 'ECU'}</span></div>}</div><nav className="faculty-jump-nav" aria-label="On this page"><a href="#overview">Overview</a>{faculty.programs?.length ? <a href="#programmes">Programmes</a> : null}<a href="#source">Official source</a></nav></div></header>
 
     <section id="overview" className="section wrap detail-grid"><div><p className="eyebrow">OVERVIEW</p><h2>{isComputing ? 'A clear starting point for computing study.' : 'Academic identity'}</h2><p>{faculty.summary || overviewFallback}</p><a className="button" href={faculty.sourceUrl} target="_blank" rel="noreferrer">Visit official ECU source <span aria-hidden="true">-&gt;</span></a></div><aside className="faculty-facts"><span>CONTENT STATUS</span><strong>{faculty.programs?.length ? `${faculty.programs.length} published study areas` : 'Directory entry verified'}</strong><p>Only ECU-published information is shown in this experience.</p></aside></section>
 

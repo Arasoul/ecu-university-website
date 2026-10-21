@@ -17,6 +17,7 @@
     "start": "next start",
     "check:conflicts": "node scripts/check-conflict-markers.mjs",
     "validate:contact": "node scripts/validate-contact.mjs",
+    "validate:media": "node scripts/validate-media.mjs",
     "validate:enrichment": "node scripts/validate-enrichment.mjs",
     "report:coverage": "node scripts/generate-content-coverage.mjs",
     "validate:editorial": "node scripts/validate-editorial.mjs",
