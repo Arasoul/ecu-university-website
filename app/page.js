@@ -9,6 +9,7 @@ import { featuredFaculties } from '../lib/faculties';
 import { programmeDirectory } from '../lib/programmes';
 import { getUniversityRecord } from '../lib/verifiedContent';
 import { latestNews } from '../lib/editorial/selectors';
+import { campusContactRecords } from '../lib/campus/contact';
 
 const labels = {
   en: { skip: 'Skip to content', faculties: 'Explore faculties', apply: 'Apply now', more: 'View all faculties', official: 'Visit official ECU source', view: 'View faculty', programmes: 'Academic programmes', admissions: 'Admissions', scholarships: 'Scholarships', services: 'Student services', continuing: 'Continuing education', achievements: 'Hall of achievements', news: 'News and events', research: 'Research and innovation', partnerships: 'International partnerships', campus: 'Campus life', contact: 'Visit and contact', unavailable: 'This section will be published when ECU-approved content is available.' },
@@ -52,6 +53,6 @@ export default function Home() {
 
     <section id="research" className="section research-panel"><div className="wrap research"><div><p className="eyebrow">{t.research}</p><h2>Research with a direction. Cooperation with purpose.</h2></div><div><p>Read ECU’s published research plans and projects, plus current faculty initiatives, through the official website. ECU’s public profile also references cooperation with Chinese universities.</p><div className="research-actions"><Link className="button" href="/research">{t.research} <span aria-hidden="true">-&gt;</span></Link><Link className="text-link" href="/about">{t.partnerships} <span aria-hidden="true">-&gt;</span></Link></div></div></div></section>
 
-    <footer id="contact"><div className="wrap footer-grid"><div><img src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" className="footer-logo" /><h2>Egyptian Chinese University</h2><Link href="/about">About ECU</Link><Link href="/faculties">{t.faculties}</Link><Link href="/contact">{t.contact}</Link><a href="https://ecu.edu.eg/" target="_blank" rel="noreferrer">{t.official}</a></div><div><p><strong>Heliopolis Branch</strong><br />Gesr ElSuez St., behind Tagneed Bridge, Cairo, Egypt.</p><p><strong>Nasr City Branch</strong><br />Al Hay Al Asher, Nasr City, Cairo, Egypt.</p></div></div><div className="wrap copyright"><span>Copyright {new Date().getFullYear()} Egyptian Chinese University.</span><Link href="#main">Back to top</Link></div></footer>
+    <footer id="contact"><div className="wrap footer-grid"><div><img src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" className="footer-logo" /><h2>Egyptian Chinese University</h2><Link href="/about">About ECU</Link><Link href="/faculties">{t.faculties}</Link><Link href="/contact">{t.contact}</Link><a href="https://ecu.edu.eg/" target="_blank" rel="noreferrer">{t.official}</a></div><div>{campusContactRecords.map((location) => <p key={location.id}><strong>{location.name}</strong><br />{location.address}</p>)}</div></div><div className="wrap copyright"><span>Copyright {new Date().getFullYear()} Egyptian Chinese University.</span><Link href="#main">Back to top</Link></div></footer>
   </main>;
 }
