@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import InformationLayout from '../../components/InformationLayout';
 import { officialSources } from '../../lib/siteContent';
 import '../information.css';
@@ -5,7 +6,7 @@ import '../information.css';
 export const metadata = { title: 'News and Events | Egyptian Chinese University' };
 
 export default function NewsEventsPage() {
-  return <InformationLayout eyebrow="NEWS & EVENTS" title="Stay close to the latest ECU updates." intro="Browse current university news and events through ECU’s official publication source. Local cards will be added when dated records are approved for this platform.">
-    <section className="information-section wrap"><div className="information-grid"><div><p className="eyebrow">CURRENT SOURCE</p><h2>One reliable place for current updates.</h2><p>Dates, event status, registration details and article content must be kept current. Until a feed is available, the official ECU news destination is the safest source for visitors.</p><div className="source-list"><a href={officialSources.news} target="_blank" rel="noreferrer">Open ECU news <span aria-hidden="true">-&gt;</span></a><a href={officialSources.home} target="_blank" rel="noreferrer">Open ECU events and homepage <span aria-hidden="true">-&gt;</span></a></div></div><div className="source-panel"><p className="eyebrow">CONTENT STATUS</p><p>No local news or upcoming-event records are published without a verified publication date and source URL.</p><a className="button" href={officialSources.news} target="_blank" rel="noreferrer">Visit official news <span aria-hidden="true">-&gt;</span></a></div></div></section>
+  return <InformationLayout eyebrow="NEWS & EVENTS" title="Stay close to ECU updates." intro="Browse the verified local archive, then continue to ECU’s official publication source for current announcements.">
+    <section className="information-section wrap"><div className="information-grid"><div><p className="eyebrow">EDITORIAL ARCHIVE</p><h2>Start with verified local records.</h2><p>Browse dated news summaries, historical activity reports and an evidence-led achievements section.</p><div className="source-list"><Link href="/news">Browse ECU news -&gt;</Link><Link href="/events">Explore events and activities -&gt;</Link><Link href="/achievements">Hall of achievements -&gt;</Link></div></div><div className="source-panel"><p className="eyebrow">CURRENT SOURCE</p><p>Current announcements, registration details and new publication dates remain on ECU’s official source.</p><a className="button" href={officialSources.news} target="_blank" rel="noreferrer">Visit official news <span aria-hidden="true">-&gt;</span></a></div></div></section>
   </InformationLayout>;
 }

@@ -14,7 +14,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check:conflicts": "node scripts/check-conflict-markers.mjs",
+    "validate:editorial": "node scripts/validate-editorial.mjs"
   },
   "keywords": [],
   "author": "",

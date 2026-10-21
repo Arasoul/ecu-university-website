@@ -83,6 +83,8 @@ This preview is not the production Next.js application and passing preview check
 
 Milestone 2 adds the verified-content search route at `/search`, programme filtering and comparison, and transparent Find My Program suggestions on `/programmes`.
 
+Milestone 3 adds certificate-specific admissions steps and FAQs, browser-local checklist persistence, locale-prefixed routing (`/en`, `/ar`, `/zh`), verified service destinations at `/services`, and an editorial workflow model. Most institutional editorial content remains English until ECU-approved translations are supplied.
+
 ## Current limitations
 
 - Next.js dependencies are unavailable in the existing environment.

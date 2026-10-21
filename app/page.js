@@ -8,6 +8,7 @@ import SiteHeader from '../components/SiteHeader';
 import { featuredFaculties } from '../lib/faculties';
 import { programmeDirectory } from '../lib/programmes';
 import { getUniversityRecord } from '../lib/verifiedContent';
+import { latestNews } from '../lib/editorial/selectors';
 
 const labels = {
   en: { skip: 'Skip to content', faculties: 'Explore faculties', apply: 'Apply now', more: 'View all faculties', official: 'Visit official ECU source', view: 'View faculty', programmes: 'Academic programmes', admissions: 'Admissions', scholarships: 'Scholarships', services: 'Student services', continuing: 'Continuing education', achievements: 'Hall of achievements', news: 'News and events', research: 'Research and innovation', partnerships: 'International partnerships', campus: 'Campus life', contact: 'Visit and contact', unavailable: 'This section will be published when ECU-approved content is available.' },
@@ -18,6 +19,7 @@ const labels = {
 export default function Home() {
   const [lang, setLang] = useState('en');
   const t = labels[lang];
+  const featuredNews = latestNews().slice(0, 3);
   const profile = getUniversityRecord('uni-profile');
   const practicalModel = getUniversityRecord('uni-history-model');
   const mission = getUniversityRecord('uni-mission');
@@ -43,6 +45,7 @@ export default function Home() {
     <section className="section wrap" aria-labelledby="featured-title"><div className="section-intro"><div><p className="eyebrow">FEATURED FACULTIES</p><h2 id="featured-title">Choose a direction. Build what comes next.</h2></div><Link className="outlined-link" href="/faculties">{t.more} -&gt;</Link></div><div className="faculty-grid">{featuredFaculties.map((faculty, index) => <FacultyCard key={faculty.slug} faculty={faculty} index={index} featured />)}</div></section>
 
     <section id="programmes" className="section programmes-home" aria-labelledby="programmes-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">{t.programmes}</p><h2 id="programmes-title">Start with a field that fits your ambition.</h2></div><Link className="outlined-link" href="/programmes">{t.more} -&gt;</Link></div><ProgrammeFinder programmes={programmeDirectory} initialLimit={6} /></div></section>
+    <section className="section homepage-editorial" aria-labelledby="homepage-news-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">FROM THE ECU ARCHIVE</p><h2 id="homepage-news-title">Stories worth keeping in context.</h2></div><Link className="outlined-link" href="/news">Browse all news -&gt;</Link></div><div className="homepage-editorial-grid">{featuredNews.map((story, index) => <article key={story.id} className={index === 0 ? 'homepage-editorial-feature' : ''}><p className="eyebrow">{story.category}</p><h3><Link href={`/news/${story.slug}`}>{story.title}</Link></h3><p>{story.summary}</p><time dateTime={story.publicationDate}>{story.publicationDate}</time></article>)}</div><div className="editorial-home-links"><Link href="/events">Explore historical activities -&gt;</Link></div></div></section>
 
     <section id="admissions" className="section feature" aria-labelledby="admissions-title"><div className="wrap feature-grid"><div><p className="eyebrow">{t.admissions}</p><h2 id="admissions-title">Find the requirements before you apply.</h2><p>ECU publishes entry requirements and required documents for Egyptian, Arab and international secondary certificates.</p><Link className="button" href="/admissions">{t.admissions} <span aria-hidden="true">-&gt;</span></Link></div><aside className="admissions-steps"><p>YOUR NEXT THREE STEPS</p><ol><li><b>01</b><span>Review entry requirements</span></li><li><b>02</b><span>Prepare the required documents</span></li><li><b>03</b><span>Continue through the secure application pathway</span></li></ol></aside></div></section>
 
