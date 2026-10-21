@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "1.0",
+  "datasetId": "ecu-milestone-6-enrichment-2026-10-21",
+  "verifiedOn": "2026-10-21",
+  "publicationPolicy": "Only records with official public source evidence and a reviewed status may render publicly. Held records remain research leads.",
+  "sourceRegistry": [
+    {
+      "id": "source-faculty-directory",
+      "url": "https://ecu.edu.eg/faculties/",
+      "title": "Faculties - ECU",
+      "language": "en",
+      "pageType": "faculty-directory",
+      "accessStatus": "accessible_limited_text",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-media-activities",
+      "url": "https://ecu.edu.eg/faculties/media/student-activities/",
+      "title": "Technical Report of Student Activities at the Faculty of Mass Communication",
+      "language": "en",
+      "pageType": "faculty-activities",
+      "accessStatus": "accessible",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-engineering-activities",
+      "url": "https://ecu.edu.eg/faculties/engineering-and-technology/student-activities/",
+      "title": "Engineering and Technology student activities",
+      "language": "en",
+      "pageType": "faculty-activities",
+      "accessStatus": "accessible",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-research-plan",
+      "url": "https://ecu.edu.eg/research-plan/",
+      "title": "Research plan",
+      "language": "en",
+      "pageType": "research-strategy",
+      "accessStatus": "accessible",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-central-research-lab",
+      "url": "https://ecu.edu.eg/central-research-lab/",
+      "title": "Central Research Lab",
+      "language": "en",
+      "pageType": "facility",
+      "accessStatus": "accessible",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-veterinary",
+      "url": "https://ecu.edu.eg/faculties/veterinary-medicine/",
+      "title": "Faculty of Veterinary Medicine",
+      "language": "en",
+      "pageType": "faculty-profile",
+      "accessStatus": "accessible",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-university-profile",
+      "url": "https://ecu.edu.eg/about-ecu/university-profile/",
+      "title": "University profile",
+      "language": "en",
+      "pageType": "university-profile",
+      "accessStatus": "accessible",
+      "verifiedOn": "2026-10-21"
+    },
+    {
+      "id": "source-gallery",
+      "url": "https://ecu.edu.eg/photo-gallery/",
+      "title": "ECU photo gallery",
+      "language": "en",
+      "pageType": "media-gallery",
+      "accessStatus": "accessible_limited_text",
+      "verifiedOn": "2026-10-21"
+    }
+  ],
+  "facultyEnrichment": [
+    {
+      "id": "faculty-enrichment-veterinary-medicine",
+      "facultySlug": "veterinary-medicine",
+      "title": "Veterinary Medicine",
+      "overview": "ECU states that the Faculty of Veterinary Medicine began in academic year 2023/2024 and describes study across veterinary medicine, clinical practice, food safety, fish health and One Health-related research aims.",
+      "studyStructure": "The source describes five academic years plus one year of internship.",
+      "publishedAreas": ["General veterinary medicine", "Pets", "Poultry and rabbits", "Food health and safety", "Clinical veterinary pharmacology", "Fish diseases and fish farming"],
+      "sourceUrl": "https://ecu.edu.eg/faculties/veterinary-medicine/",
+      "verification": "official_public_source",
+      "editorialStatus": "reviewed-source-summary",
+      "publishStatus": "published",
+      "translationStatus": "provisional-english"
+    }
+  ],
+  "publishedActivities": [
+    {
+      "id": "mass-activity-welcoming-new-students-2025",
+      "slug": "mass-activity-welcoming-new-students-2025",
+      "title": "Welcoming new students",
+      "summary": "The Faculty of Mass Communication activity report records a welcoming activity for new students.",
+      "category": "Student activity",
+      "facultyId": "faculty-mass-communication",
+      "facultyName": "Mass Communication",
+      "eventDate": "2025-09-21",
+      "sourceUrl": "https://ecu.edu.eg/faculties/media/student-activities/",
+      "verification": "official_public_source",
+      "editorialStatus": "reviewed-source-summary",
+      "publishStatus": "published",
+      "imageAuthorization": "unverified"
+    },
+    {
+      "id": "mass-activity-military-culture-exhibition-2025",
+      "slug": "mass-activity-military-culture-exhibition-2025",
+      "title": "Participation in the Military Culture Exhibition",
+      "summary": "The Faculty of Mass Communication activity report records student participation in a Military Culture Exhibition.",
+      "category": "Student activity",
+      "facultyId": "faculty-mass-communication",
+      "facultyName": "Mass Communication",
+      "eventDate": "2025-10-06",
+      "sourceUrl": "https://ecu.edu.eg/faculties/media/student-activities/",
+      "verification": "official_public_source",
+      "editorialStatus": "reviewed-source-summary",
+      "publishStatus": "published",
+      "imageAuthorization": "unverified"
+    },
+    {
+      "id": "mass-activity-stand-with-us-seminar-2025",
+      "slug": "mass-activity-stand-with-us-seminar-2025",
+      "title": "Participation in the Stand With Us seminar",
+      "summary": "The Faculty of Mass Communication activity report records student participation in the Stand With Us seminar under the slogan Enlightened Awareness for Sustainable Victory.",
+      "category": "Student activity",
+      "facultyId": "faculty-mass-communication",
+      "facultyName": "Mass Communication",
+      "eventDate": "2025-10-20",
+      "sourceUrl": "https://ecu.edu.eg/faculties/media/student-activities/",
+      "verification": "official_public_source",
+      "editorialStatus": "reviewed-source-summary",
+      "publishStatus": "published",
+      "imageAuthorization": "unverified"
+    },
+    {
+      "id": "engineering-innovatronics-ministry-collaboration",
+      "slug": "engineering-innovatronics-ministry-collaboration",
+      "title": "Engineering and Technology industry-collaboration activity",
+      "summary": "ECU describes a Ministry of Military Production collaboration involving the Faculty of Engineering and Technology. The source says an Innovatronics marketing project represented the institution and that mechatronics students applied robotics and AI work to smart products.",
+      "category": "Industry collaboration",
+      "facultyId": "faculty-engineering-and-technology",
+      "facultyName": "Engineering and Technology",
+      "eventDate": null,
+      "sourceUrl": "https://ecu.edu.eg/faculties/engineering-and-technology/student-activities/",
+      "verification": "official_public_source",
+      "editorialStatus": "reviewed-source-summary",
+      "publishStatus": "published",
+      "imageAuthorization": "unverified"
+    }
+  ],
+  "achievementCandidates": [
+    {
+      "id": "candidate-womens-handball-gold",
+      "title": "ECU women's handball team gold-medal claim",
+      "summary": "The requested claim could not be matched to an accessible dated ECU article naming the competition, date, team and evidence.",
+      "sourceUrl": "https://ecu.edu.eg/news/",
+      "verification": "needs_official_evidence",
+      "editorialStatus": "held-pending-source",
+      "publishStatus": "held",
+      "missingFields": ["dated source article", "competition name", "team evidence", "approved media"]
+    },
+    {
+      "id": "candidate-innovatronics-best-project",
+      "title": "Innovatronics project recognition",
+      "summary": "ECU search text describes Innovatronics as the best project representing the institution, but no stable dated article or award documentation was exposed.",
+      "sourceUrl": "https://ecu.edu.eg/?s=Innovatronics",
+      "verification": "official_search_result_only",
+      "editorialStatus": "held-pending-source",
+      "publishStatus": "held",
+      "missingFields": ["stable article URL", "event date", "award category evidence", "approved media"]
+    }
+  ],
+  "researchRecords": [
+    {
+      "id": "research-objectives-sustainable-development",
+      "title": "Research aligned with global developments and sustainable development",
+      "summary": "ECU's research plan emphasizes globally relevant research, green research, sustainable development, innovation, creativity, and technology integration.",
+      "category": "Research strategy",
+      "sourceUrl": "https://ecu.edu.eg/research-plan/",
+      "verification": "official_public_source",
+      "publishStatus": "published"
+    },
+    {
+      "id": "research-capacity-and-interdisciplinary-teams",
+      "title": "Research capacity and interdisciplinary collaboration",
+      "summary": "ECU's research plan describes researcher capacity building, research teams, interdisciplinary research, postgraduate study support, and marketing of research and student projects.",
+      "category": "Research strategy",
+      "sourceUrl": "https://ecu.edu.eg/research-plan/",
+      "verification": "official_public_source",
+      "publishStatus": "published"
+    },
+    {
+      "id": "central-research-lab",
+      "title": "Central Research Lab",
+      "summary": "ECU publishes a Central Research Lab page with a laboratory video and a downloadable section describing instruments; individual equipment claims are not copied without extraction and review.",
+      "category": "Research facility",
+      "sourceUrl": "https://ecu.edu.eg/central-research-lab/",
+      "verification": "official_public_source",
+      "publishStatus": "published"
+    }
+  ],
+  "facilityRecords": [
+    {
+      "id": "facility-central-research-lab",
+      "name": "Central Research Lab",
+      "campus": "university-wide",
+      "description": "A publicly documented ECU research facility with a laboratory video and instruments section.",
+      "sourceUrl": "https://ecu.edu.eg/central-research-lab/",
+      "verification": "official_public_source",
+      "availabilityStatus": "published_source_record",
+      "mediaStatus": "rights-unverified",
+      "publishStatus": "published"
+    }
+  ],
+  "mediaCandidates": [
+    {
+      "id": "media-central-research-lab-video",
+      "subject": "Central Research Lab",
+      "sourceUrl": "https://ecu.edu.eg/central-research-lab/",
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting_written_authorization",
+      "publishable": false
+    },
+    {
+      "id": "media-veterinary-one-health-workshop",
+      "subject": "University of Liverpool veterinary research-team visit / One Health workshop",
+      "sourceUrl": "https://ecu.edu.eg/photo-gallery/",
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting_written_authorization",
+      "publishable": false
+    },
+    {
+      "id": "media-chinese-university-delegation",
+      "subject": "Visit by representatives of 24 Chinese universities",
+      "sourceUrl": "https://ecu.edu.eg/photo-gallery/",
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting_written_authorization",
+      "publishable": false
+    },
+    {
+      "id": "media-chinese-books-handover",
+      "subject": "Chinese books handover",
+      "sourceUrl": "https://ecu.edu.eg/photo-gallery/",
+      "rightsStatus": "unverified",
+      "approvalStatus": "awaiting_written_authorization",
+      "publishable": false
+    }
+  ],
+  "coverageGaps": [
+    {"category": "faculty-detail", "scope": "all faculties", "status": "partial", "missing": ["Arabic names", "current leadership", "departments", "programme awards", "research fields", "approved contact details"]},
+    {"category": "achievement", "scope": "women's handball gold", "status": "held", "missing": ["dated official article", "competition evidence", "approved media"]},
+    {"category": "achievement", "scope": "Innovatronics recognition", "status": "held", "missing": ["stable article", "date", "award documentation", "approved media"]},
+    {"category": "facility", "scope": "campuses", "status": "partial", "missing": ["verified academic buildings", "libraries", "sports facilities", "student spaces", "operating details"]},
+    {"category": "translation", "scope": "new enrichment records", "status": "awaiting-review", "missing": ["ECU-approved Arabic and Simplified Chinese editorial translations"]}
+  ]
+}

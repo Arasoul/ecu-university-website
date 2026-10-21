@@ -1,0 +1,233 @@
+{
+  "generatedOn": "2026-10-21",
+  "branch": "milestone-6-content-enrichment",
+  "before": {
+    "publishedNews": 2,
+    "historicalActivities": 5,
+    "publishedAchievements": 0,
+    "researchRecords": 0,
+    "verifiedFacilities": 0,
+    "mediaCandidates": 4
+  },
+  "after": {
+    "facultiesAudited": 12,
+    "publishedActivities": 4,
+    "publishedAchievements": 0,
+    "heldAchievementCandidates": 2,
+    "researchRecords": 3,
+    "facilityRecords": 1,
+    "mediaCandidates": 8,
+    "approvedMedia": 0
+  },
+  "sourceCount": 8,
+  "coverageGaps": [
+    {
+      "category": "faculty-detail",
+      "scope": "all faculties",
+      "status": "partial",
+      "missing": [
+        "Arabic names",
+        "current leadership",
+        "departments",
+        "programme awards",
+        "research fields",
+        "approved contact details"
+      ]
+    },
+    {
+      "category": "achievement",
+      "scope": "women's handball gold",
+      "status": "held",
+      "missing": [
+        "dated official article",
+        "competition evidence",
+        "approved media"
+      ]
+    },
+    {
+      "category": "achievement",
+      "scope": "Innovatronics recognition",
+      "status": "held",
+      "missing": [
+        "stable article",
+        "date",
+        "award documentation",
+        "approved media"
+      ]
+    },
+    {
+      "category": "facility",
+      "scope": "campuses",
+      "status": "partial",
+      "missing": [
+        "verified academic buildings",
+        "libraries",
+        "sports facilities",
+        "student spaces",
+        "operating details"
+      ]
+    },
+    {
+      "category": "translation",
+      "scope": "new enrichment records",
+      "status": "awaiting-review",
+      "missing": [
+        "ECU-approved Arabic and Simplified Chinese editorial translations"
+      ]
+    }
+  ],
+  "facultyCoverage": [
+    {
+      "id": "faculty-computers-information-systems",
+      "name": "Computers and Information Systems",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-engineering-technology",
+      "name": "Engineering and Technology",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-pharmacy-drug-technology",
+      "name": "Pharmacy and Drug Technology",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-physical-therapy",
+      "name": "Physical Therapy",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-economics-international-trade",
+      "name": "Economics and International Trade",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-arts-design",
+      "name": "Arts and Design",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-veterinary-medicine",
+      "name": "Veterinary Medicine",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-mass-communication",
+      "name": "Mass Communication",
+      "status": "detailed",
+      "missing": [
+        "leadership",
+        "approved contact"
+      ]
+    },
+    {
+      "id": "faculty-literary-studies",
+      "name": "Literary Studies",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-law",
+      "name": "Law",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-nursing",
+      "name": "Nursing",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    },
+    {
+      "id": "faculty-humanities-gis-surveying",
+      "name": "Humanities (GIS & Surveying)",
+      "status": "directory-only",
+      "missing": [
+        "overview",
+        "leadership",
+        "departments",
+        "programmes",
+        "research",
+        "contact"
+      ]
+    }
+  ]
+}
