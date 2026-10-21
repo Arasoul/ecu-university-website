@@ -6,7 +6,7 @@ export default function InformationLayout({ eyebrow, title, intro, children }) {
     <SiteHeader />
     <header className="information-hero"><div className="wrap"><Link className="breadcrumb" href="/">ECU home</Link><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p>{intro}</p></div></header>
     {children}
-    <footer className="simple-footer"><div className="wrap simple-footer-inner"><Link href="/">Egyptian Chinese University</Link><Link href="/faculties">Faculties</Link><a href="https://ecu.edu.eg/" target="_blank" rel="noreferrer">Official ECU website</a></div></footer>
+    <footer className="simple-footer"><div className="wrap simple-footer-inner"><Link href="/">Egyptian Chinese University</Link><Link href="/faculties">Faculties</Link><Link href="/contact">Visit and contact</Link><Link href="/admissions">Admissions</Link></div></footer>
   </main>;
 }
 

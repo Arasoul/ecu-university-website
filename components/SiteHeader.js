@@ -57,7 +57,7 @@ export default function SiteHeader({ onLocaleChange }) {
 
   const t = translations[locale];
   return <header className="site-header">
-    <div className="utility-bar"><div className="wrap utility-inner"><span>Egyptian Chinese University</span><div className="utility-actions"><Link href="/contact">{t.students}</Link><Link href="/contact">{t.staff}</Link><Link href="/about">{t.alumni}</Link><Link href="/contact">{t.library}</Link><a href="https://ecu.edu.eg/" target="_blank" rel="noreferrer">{t.official}</a><label><span className="sr-only">{t.language}</span><select aria-label={t.language} value={locale} onChange={changeLocale}><option value="en">EN</option><option value="ar">AR</option><option value="zh">中文</option></select></label></div></div></div>
+    <div className="utility-bar"><div className="wrap utility-inner"><span>Egyptian Chinese University</span><div className="utility-actions"><Link href="/contact">{t.students}</Link><Link href="/contact">{t.staff}</Link><Link href="/about">{t.alumni}</Link><Link href="/services">{t.library}</Link><label><span className="sr-only">{t.language}</span><select aria-label={t.language} value={locale} onChange={changeLocale}><option value="en">EN</option><option value="ar">AR</option><option value="zh">中文</option></select></label></div></div></div>
     <div className="nav wrap">
       <Link className="brand" href="/" onClick={() => setOpen(false)}><img src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" /><span>Egyptian<br />Chinese University</span></Link>
       <nav id="main-menu" aria-label="Primary navigation" className={open ? 'nav-links is-open' : 'nav-links'}>
