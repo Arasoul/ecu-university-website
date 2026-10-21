@@ -8,7 +8,7 @@ import { headers } from 'next/headers';
 
 export function generateMetadata() {
   const locale = headers().get('x-ecu-locale') || 'en';
-  const path = headers().get('x-ecu-path') || '/';
+  const path = (headers().get('x-ecu-path') || '/').replace(/^\/(en|ar|zh)(?=\/|$)/, '') || '/';
   const host = headers().get('x-forwarded-host') || headers().get('host') || 'ecu-university-website.vercel.app';
   const protocol = headers().get('x-forwarded-proto') || 'https';
   const origin = `${protocol}://${host}`;

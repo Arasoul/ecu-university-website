@@ -2,12 +2,15 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { isLocale, localeKey, translations } from '../lib/translations';
 
 export default function SiteHeader({ onLocaleChange }) {
   const [locale, setLocale] = useState('en');
   const [open, setOpen] = useState(false);
   const [academicsOpen, setAcademicsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const stored = window.localStorage.getItem('ecu-locale');
@@ -48,6 +51,8 @@ export default function SiteHeader({ onLocaleChange }) {
     setLocale(next);
     window.dispatchEvent(new CustomEvent('ecu-locale-change', { detail: next }));
     if (onLocaleChange) onLocaleChange(next);
+    const pathWithoutLocale = pathname.replace(/^\/(en|ar|zh)(?=\/|$)/, '') || '/';
+    router.push(`/${next}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`);
   };
 
   const t = translations[locale];
