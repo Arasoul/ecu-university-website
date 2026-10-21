@@ -15,7 +15,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "validate:editorial": "node scripts/validate-editorial.mjs"
+    "validate:editorial": "node scripts/validate-editorial.mjs",
+    "validate:campus": "node scripts/validate-campus.mjs"
   },
   "keywords": [],
   "author": "",

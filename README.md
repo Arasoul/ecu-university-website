@@ -85,6 +85,8 @@ Milestone 2 adds the verified-content search route at `/search`, programme filte
 
 Milestone 3 adds certificate-specific admissions steps and FAQs, browser-local checklist persistence, locale-prefixed routing (`/en`, `/ar`, `/zh`), verified service destinations at `/services`, and an editorial workflow model. Most institutional editorial content remains English until ECU-approved translations are supplied.
 
+Milestone 4 adds verified news and historical activity archives, source-backed detail routes, date-safe event classification, and an evidence-led Hall of Achievements. Milestone 5 adds Campus Life activity discovery, practical-learning links, branch locations, facility/media authorization boundaries, and canonical links back to editorial records.
+
 ## Current limitations
 
 - Next.js dependencies are unavailable in the existing environment.
