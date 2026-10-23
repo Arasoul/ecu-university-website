@@ -20,6 +20,10 @@
   --line-body: 1.6;
   --space-section: clamp(3.5rem, 7vw, 6.5rem);
   --space-card: clamp(1.15rem, 2.2vw, 2rem);
+  --font-body-stack: var(--font-inter), Inter, "Source Sans 3", "Cairo", "IBM Plex Sans Arabic", "Microsoft YaHei", Arial, sans-serif;
+  --font-heading-stack: var(--font-manrope), Manrope, "Plus Jakarta Sans", "Cairo", "Microsoft YaHei", Georgia, serif;
+  --font-arabic-stack: var(--font-noto-arabic), "Noto Sans Arabic", Tahoma, Arial, sans-serif;
+  --font-chinese-stack: var(--font-noto-sc), "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -29,7 +33,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Inter, "Source Sans 3", "Cairo", "IBM Plex Sans Arabic", "Microsoft YaHei", Arial, sans-serif;
+  font-family: var(--font-body-stack);
   line-height: var(--line-body);
   font-size: var(--font-body);
 }
@@ -188,14 +192,14 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3, p { margin-top: 0; }
 h1 {
   max-width: 720px;
-  font-family: Manrope, "Plus Jakarta Sans", "Cairo", "Microsoft YaHei", Georgia, serif;
+  font-family: var(--font-heading-stack);
   font-size: var(--font-hero);
   line-height: var(--line-heading);
   letter-spacing: -.055em;
   margin-bottom: 1.5rem;
 }
 h2 {
-  font-family: Manrope, "Plus Jakarta Sans", "Cairo", "Microsoft YaHei", Georgia, serif;
+  font-family: var(--font-heading-stack);
   font-size: var(--font-section);
   line-height: var(--line-heading);
   letter-spacing: -.035em;
@@ -254,7 +258,7 @@ h2 {
 .faculty-card-top { display: flex; justify-content: space-between; align-items: center; }
 .faculty-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--line); color: var(--primary); font-size: .72rem; letter-spacing: .08em; }
 .faculty-card span { color: var(--primary); font-size: .8rem; font-weight: bold; }
-.faculty-card h3 { font-family: Georgia, serif; font-size: 1.55rem; line-height: 1.1; margin: auto 0 1rem; }
+.faculty-card h3 { font-family: var(--font-heading-stack); font-size: 1.55rem; line-height: 1.1; margin: auto 0 1rem; }
 .faculty-card p { font-size: .86rem; margin: 0; }
 .faculty-card i { align-self: end; margin-top: .6rem; }
 .outlined-link { border-bottom: 2px solid var(--primary); font-weight: 700; padding-bottom: .45rem; }

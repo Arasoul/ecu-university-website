@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "dependencies": {
-    "next": "14.2.25",
+    "next": "14.2.35",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -21,9 +21,22 @@
     "validate:enrichment": "node scripts/validate-enrichment.mjs",
     "report:coverage": "node scripts/generate-content-coverage.mjs",
     "validate:editorial": "node scripts/validate-editorial.mjs",
-    "validate:campus": "node scripts/validate-campus.mjs"
+    "validate:campus": "node scripts/validate-campus.mjs",
+    "audit:site": "node scripts/audit-site.mjs",
+    "audit:full": "node scripts/run-audit.mjs --build",
+    "check:locales": "node scripts/check-locales.mjs",
+    "check:text": "node scripts/check-text.mjs",
+    "check:structure": "node scripts/check-chrome.mjs",
+    "hooks:install": "node scripts/install-git-hooks.mjs",
+    "prepare": "node scripts/install-git-hooks.mjs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "overrides": {
+    "postcss": "8.5.31"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
 }
