@@ -6,16 +6,18 @@ import { useEffect, useState } from 'react';
 import FacultyCard from '../components/FacultyCard';
 import ProgrammeFinder from '../components/ProgrammeFinder';
 import SiteHeader from '../components/SiteHeader';
+import SiteFooter from '../components/SiteFooter';
 import { featuredFaculties } from '../lib/faculties';
 import { programmeDirectory } from '../lib/programmes';
 import { getUniversityRecord } from '../lib/verifiedContent';
+import { localeFromPath } from '../lib/translations';
 import { latestNews } from '../lib/editorial/selectors';
-import { campusContactRecords } from '../lib/campus/contact';
+import { formatEditorialDate } from '../lib/editorial/records';
 
 const labels = {
-  en: { skip: 'Skip to content', faculties: 'Explore faculties', apply: 'Apply now', more: 'View all faculties', official: 'Visit official ECU source', view: 'View faculty', programmes: 'Academic programmes', admissions: 'Admissions', scholarships: 'Scholarships', services: 'Student services', continuing: 'Continuing education', achievements: 'Hall of achievements', news: 'News and events', research: 'Research and innovation', partnerships: 'International partnerships', campus: 'Campus life', contact: 'Visit and contact', unavailable: 'This section will be published when ECU-approved content is available.' },
-  ar: { skip: 'انتقل إلى المحتوى', faculties: 'استكشف الكليات', apply: 'قدّم الآن', more: 'عرض جميع الكليات', official: 'زيارة مصدر ECU الرسمي', view: 'عرض الكلية', programmes: 'البرامج الأكاديمية', admissions: 'القبول', scholarships: 'المنح الدراسية', services: 'خدمات الطلاب', continuing: 'التعليم المستمر', achievements: 'قاعة الإنجازات', news: 'الأخبار والفعاليات', research: 'البحث والابتكار', partnerships: 'الشراكات الدولية', campus: 'الحياة الجامعية', contact: 'زيارة وتواصل', unavailable: 'سيُنشر هذا القسم عند توفر محتوى معتمد من ECU.' },
-  zh: { skip: '跳转到内容', faculties: '探索学院', apply: '立即申请', more: '查看全部学院', official: '访问 ECU 官方来源', view: '查看学院', programmes: '学术课程', admissions: '招生', scholarships: '奖学金', services: '学生服务', continuing: '继续教育', achievements: '成就殿堂', news: '新闻与活动', research: '研究与创新', partnerships: '国际合作', campus: '校园生活', contact: '参观与联系', unavailable: 'ECU 批准内容发布后，此部分将会开放。' },
+  en: { skip: 'Skip to content', faculties: 'Explore faculties', apply: 'Apply now', more: 'View all faculties', allProgrammes: 'View all programmes', official: 'Visit official ECU source', view: 'View faculty', programmes: 'Academic programmes', admissions: 'Admissions', scholarships: 'Scholarships', services: 'Student services', continuing: 'Continuing education', achievements: 'Hall of achievements', news: 'News and events', research: 'Research and innovation', partnerships: 'International partnerships', campus: 'Campus life', contact: 'Visit and contact', unavailable: 'This section will be published when ECU-approved content is available.' },
+  ar: { skip: 'انتقل إلى المحتوى', faculties: 'استكشف الكليات', apply: 'قدّم الآن', more: 'عرض جميع الكليات', allProgrammes: 'عرض جميع البرامج', official: 'زيارة مصدر ECU الرسمي', view: 'عرض الكلية', programmes: 'البرامج الأكاديمية', admissions: 'القبول', scholarships: 'المنح الدراسية', services: 'خدمات الطلاب', continuing: 'التعليم المستمر', achievements: 'قاعة الإنجازات', news: 'الأخبار والفعاليات', research: 'البحث والابتكار', partnerships: 'الشراكات الدولية', campus: 'الحياة الجامعية', contact: 'زيارة وتواصل', unavailable: 'سيُنشر هذا القسم عند توفر محتوى معتمد من ECU.' },
+  zh: { skip: '跳转到内容', faculties: '探索学院', apply: '立即申请', more: '查看全部学院', allProgrammes: '查看全部课程', official: '访问 ECU 官方来源', view: '查看学院', programmes: '学术课程', admissions: '招生', scholarships: '奖学金', services: '学生服务', continuing: '继续教育', achievements: '成就殿堂', news: '新闻与活动', research: '研究与创新', partnerships: '国际合作', campus: '校园生活', contact: '参观与联系', unavailable: 'ECU 批准内容发布后，此部分将会开放。' },
 };
 
 export default function Home() {
@@ -27,8 +29,10 @@ export default function Home() {
   const mission = getUniversityRecord('uni-mission');
 
   useEffect(() => {
+    const urlLocale = localeFromPath(window.location.pathname);
     const stored = window.localStorage.getItem('ecu-locale');
-    if (stored === 'ar' || stored === 'zh') setLang(stored);
+    const next = urlLocale || (stored === 'ar' || stored === 'zh' ? stored : 'en');
+    setLang(next);
     const handleLocale = (event) => setLang(event.detail);
     window.addEventListener('ecu-locale-change', handleLocale);
     return () => window.removeEventListener('ecu-locale-change', handleLocale);
@@ -46,8 +50,8 @@ export default function Home() {
 
     <section className="section wrap" aria-labelledby="featured-title"><div className="section-intro"><div><p className="eyebrow">FEATURED FACULTIES</p><h2 id="featured-title">Choose a direction. Build what comes next.</h2></div><Link className="outlined-link" href="/faculties">{t.more} -&gt;</Link></div><div className="faculty-grid">{featuredFaculties.map((faculty, index) => <FacultyCard key={faculty.slug} faculty={faculty} index={index} featured />)}</div></section>
 
-    <section id="programmes" className="section programmes-home" aria-labelledby="programmes-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">{t.programmes}</p><h2 id="programmes-title">Start with a field that fits your ambition.</h2></div><Link className="outlined-link" href="/programmes">{t.more} -&gt;</Link></div><ProgrammeFinder programmes={programmeDirectory} initialLimit={6} /></div></section>
-    <section className="section homepage-editorial" aria-labelledby="homepage-news-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">FROM THE ECU ARCHIVE</p><h2 id="homepage-news-title">Stories worth keeping in context.</h2></div><Link className="outlined-link" href="/news">Browse all news -&gt;</Link></div><div className="homepage-editorial-grid">{featuredNews.map((story, index) => <article key={story.id} className={index === 0 ? 'homepage-editorial-feature' : ''}><p className="eyebrow">{story.category}</p><h3><Link href={`/news/${story.slug}`}>{story.title}</Link></h3><p>{story.summary}</p><time dateTime={story.publicationDate}>{story.publicationDate}</time></article>)}</div><div className="editorial-home-links"><Link href="/events">Explore historical activities -&gt;</Link></div></div></section>
+    <section id="programmes" className="section programmes-home" aria-labelledby="programmes-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">{t.programmes}</p><h2 id="programmes-title">Start with a field that fits your ambition.</h2></div><Link className="outlined-link" href="/programmes">{t.allProgrammes} -&gt;</Link></div><ProgrammeFinder programmes={programmeDirectory} initialLimit={6} /></div></section>
+    <section className="section homepage-editorial" aria-labelledby="homepage-news-title"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">FROM THE ECU ARCHIVE</p><h2 id="homepage-news-title">Stories worth keeping in context.</h2></div><Link className="outlined-link" href="/news">Browse all news -&gt;</Link></div><div className="homepage-editorial-grid">{featuredNews.map((story, index) => <article key={story.id} className={index === 0 ? 'homepage-editorial-feature' : ''}><p className="eyebrow">{story.category}</p><h3><Link href={`/news/${story.slug}`}>{story.title}</Link></h3><p>{story.summary}</p><time dateTime={story.publicationDate}>{formatEditorialDate(story.publicationDate)}</time></article>)}</div><div className="editorial-home-links"><Link href="/events">Explore historical activities -&gt;</Link></div></div></section>
     <section className="section campus-home-feature" aria-labelledby="campus-home-title"><div className="wrap campus-home-inner"><div><p className="eyebrow">CAMPUS LIFE</p><h2 id="campus-home-title">Practice, participation and connection.</h2><p>Explore verified activity records, practical learning areas and published campus information.</p></div><Link className="button" href="/campus-life">Discover campus life -&gt;</Link></div></section>
     <section className="section campus-home-visual" aria-labelledby="campus-visual-title"><div className="wrap campus-home-visual-grid"><div className="campus-home-photo"><Image src="/images/ecu/campus/nasr-city-campus-opening.jpg" alt="ECU Nasr City campus entrance with its glass-fronted central facade" width={1024} height={816} sizes="(max-width: 700px) 100vw, 55vw" /></div><div className="campus-home-visual-copy"><p className="eyebrow">TWO VERIFIED LOCATIONS</p><h2 id="campus-visual-title">Choose the branch that fits your next step.</h2><p>Nasr City is shown through an ECU-hosted campus photograph. Heliopolis remains represented by its verified address and faculty associations until a correctly identified photograph is available.</p><div className="campus-home-links"><Link href="/contact">Compare campus locations -&gt;</Link><Link href="/campus-life/visit">Plan a visit -&gt;</Link></div></div></div></section>
 
@@ -55,6 +59,6 @@ export default function Home() {
 
     <section id="research" className="section research-panel"><div className="wrap research"><div><p className="eyebrow">{t.research}</p><h2>Research with a direction. Cooperation with purpose.</h2></div><div><p>Read ECU’s published research plans and projects, plus current faculty initiatives, through the official website. ECU’s public profile also references cooperation with Chinese universities.</p><div className="research-actions"><Link className="button" href="/research">{t.research} <span aria-hidden="true">-&gt;</span></Link><Link className="text-link" href="/about">{t.partnerships} <span aria-hidden="true">-&gt;</span></Link></div></div></div></section>
 
-    <footer id="contact"><div className="wrap footer-grid"><div><img src="/assets/images/ecu-logo.png" alt="Egyptian Chinese University" className="footer-logo" /><h2>Egyptian Chinese University</h2><Link href="/about">About ECU</Link><Link href="/faculties">{t.faculties}</Link><Link href="/contact">{t.contact}</Link><Link href="/admissions">{t.admissions}</Link></div><div>{campusContactRecords.map((location) => <p key={location.id}><strong>{location.name}</strong><br />{location.address}</p>)}</div></div><div className="wrap copyright"><span>Copyright {new Date().getFullYear()} Egyptian Chinese University.</span><Link href="#main">Back to top</Link></div></footer>
+    <SiteFooter />
   </main>;
 }

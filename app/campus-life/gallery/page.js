@@ -5,7 +5,7 @@ import '../../information.css';
 
 export const metadata = { title: 'Campus Gallery | Egyptian Chinese University' };
 export default function CampusGalleryPage() {
-  const assets = mediaManifest.publishedAssets.filter((asset) => asset.filePath?.match(/\.(jpe?g|png|webp|avif)$/i)).map((asset) => ({
+  const assets = mediaManifest.publishedAssets.filter((asset) => asset.localFile?.match(/\.(jpe?g|png|webp|avif)$/i)).map((asset) => ({
     ...asset,
     categories: [
       asset.campus ? 'Campus' : null,

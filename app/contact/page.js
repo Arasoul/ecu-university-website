@@ -1,5 +1,6 @@
 import InformationLayout from '../../components/InformationLayout';
 import CampusContactExplorer from '../../components/CampusContactExplorer';
+import Link from 'next/link';
 import { campusContactSources } from '../../lib/campus/contact';
 import { headers } from 'next/headers';
 import '../information.css';
@@ -25,7 +26,7 @@ export default function ContactPage() {
     <section className="section contact-options"><div className="wrap contact-options-grid"><div><p className="eyebrow">{t.contact}</p><h2>{t.contactHeading}</h2><p>{t.contactText}</p></div><div className="contact-source-list"><a href="tel:19346"><strong>19346</strong><span>{t.hotline}</span></a><a href="https://ecu.edu.eg/contact-us/" target="_blank" rel="noreferrer"><strong>{t.officialContact}</strong><span>ECU</span></a><a href="https://admission.ecu.edu.eg/" target="_blank" rel="noreferrer"><strong>{t.application}</strong><span>admission.ecu.edu.eg</span></a></div></div></section>
     <section className="section wrap contact-faculty-note" aria-labelledby="faculty-location-title"><div><p className="eyebrow">{t.before}</p><h2 id="faculty-location-title">{t.beforeHeading}</h2></div><p>{t.beforeText}</p></section>
     <section className="section contact-faq"><div className="wrap"><div className="section-intro"><div><p className="eyebrow">VISITOR QUESTIONS</p><h2>{t.questions}</h2></div></div><div className="contact-faq-grid"><details><summary>{t.faq[0]}</summary><p>Gesr El Suez Street, behind Tagneed Bridge, Cairo, Egypt.</p></details><details><summary>{t.faq[1]}</summary><p>Al Hay Al Asher, Nasr City, Cairo, Egypt.</p></details><details><summary>{t.faq[2]}</summary><p>Call the university hotline at <a href="tel:19346">19346</a> or use the official ECU contact page.</p></details><details><summary>{t.faq[3]}</summary><p>Use the official <a href="https://admission.ecu.edu.eg/" target="_blank" rel="noreferrer">ECU application portal</a>.</p></details></div></div></section>
-    <section className="section contact-final-cta"><div className="wrap contact-final-inner"><div><p className="eyebrow">KEEP EXPLORING</p><h2>{t.final}</h2></div><div className="campus-actions"><a className="button" href="/faculties">{t.ctaFaculties} -&gt;</a><a className="outlined-link" href="/programmes">{t.ctaProgrammes}</a><a className="outlined-link" href="/campus-life">{t.ctaCampus}</a></div></div></section>
+    <section className="section contact-final-cta"><div className="wrap contact-final-inner"><div><p className="eyebrow">KEEP EXPLORING</p><h2>{t.final}</h2></div><div className="campus-actions"><Link className="button" href="/faculties">{t.ctaFaculties} -&gt;</Link><Link className="outlined-link" href="/programmes">{t.ctaProgrammes}</Link><Link className="outlined-link" href="/campus-life">{t.ctaCampus}</Link></div></div></section>
     <section className="wrap contact-sources"><p className="eyebrow">SOURCE RECORD</p><p>{campusContactSources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ({source.verifiedOn})</a>)}</p></section>
   </InformationLayout>;
 }

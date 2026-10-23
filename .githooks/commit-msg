@@ -1,0 +1,17 @@
+#!/bin/sh
+# Strips automation co-author trailers from commit messages.
+# Install with: node scripts/install-git-hooks.mjs
+message_file="$1"
+
+if [ -z "$message_file" ] || [ ! -f "$message_file" ]; then
+  exit 0
+fi
+
+tmp="$(mktemp)"
+grep -v -i -E '^[[:space:]]*co-authored-by:[[:space:]]*.*(copilot|github-actions|openai|anthropic|claude|codex|devin|cursor|windsurf)' "$message_file" > "$tmp" || true
+
+# Collapse a trailing block of blank lines left behind by the removal.
+awk 'NF {blank=0} !NF {blank++; if (blank>1) next} {print}' "$tmp" > "$message_file"
+rm -f "$tmp"
+
+exit 0

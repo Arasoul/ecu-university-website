@@ -41,8 +41,8 @@
   .quick a { padding: .9rem .75rem; gap: .45rem; }
   .quick a small { font-size: .7rem; }
 }
-[lang="ar"] body { font-family: "Noto Sans Arabic", Tahoma, Arial, sans-serif; }
+[lang="ar"] body { font-family: var(--font-arabic-stack); }
 [lang="ar"] h1,[lang="ar"] h2,[lang="ar"] h3 { line-height: 1.25; letter-spacing: 0; }
-[lang="zh-Hans"] body { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; }
+[lang="zh-Hans"] body { font-family: var(--font-chinese-stack); }
 [lang="zh-Hans"] h1,[lang="zh-Hans"] h2,[lang="zh-Hans"] h3 { line-height: 1.25; letter-spacing: 0; }
 h1,h2,h3 { text-wrap: balance; }

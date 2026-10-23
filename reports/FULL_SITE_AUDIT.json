@@ -1,0 +1,2698 @@
+{
+  "summary": {
+    "baseUrl": "http://127.0.0.1:3100",
+    "generatedAt": "2026-10-23T06:34:57.537Z",
+    "routesAudited": 56,
+    "staticRoutesDiscovered": 18,
+    "invalidRoutesTested": 9,
+    "linksChecked": 71,
+    "issueCount": 0,
+    "P0": 0,
+    "P1": 0,
+    "P2": 0,
+    "P3": 0,
+    "interactionsFailed": 0
+  },
+  "issues": [],
+  "interactions": [
+    {
+      "name": "desktop mega menu opens with links",
+      "passed": true,
+      "detail": "{\"visible\":true,\"links\":[\"/zh/faculties\",\"/zh/programmes\",\"/zh/research\",\"/zh/services\",\"/zh/programmes\"],\"expanded\":\"true\"}"
+    },
+    {
+      "name": "mega menu closes on Escape",
+      "passed": true,
+      "detail": "{\"expanded\":\"false\",\"present\":false}"
+    },
+    {
+      "name": "mega menu closes on outside click",
+      "passed": true,
+      "detail": "aria-expanded=false"
+    },
+    {
+      "name": "mobile menu opens",
+      "passed": true,
+      "detail": "{\"visible\":true,\"expanded\":\"true\",\"linkCount\":8}"
+    },
+    {
+      "name": "locale switch navigates to /ar and sets RTL",
+      "passed": true,
+      "detail": "{\"url\":\"/ar\",\"lang\":\"ar\",\"dir\":\"rtl\"}"
+    },
+    {
+      "name": "Arabic header navigation links stay in /ar",
+      "passed": true,
+      "detail": "[\"/ar/about\",\"/ar/admissions\",\"/ar/research\",\"/ar/news-events\",\"/ar/campus-life\",\"/ar/services\",\"/ar/contact\",\"/ar/search\"]"
+    },
+    {
+      "name": "Arabic header navigation is translated",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Utility bar links point to real ECU destinations",
+      "passed": true,
+      "detail": "[\"/ar/services#students\",\"/ar/services#staff\",\"/ar/services#alumni\",\"/ar/services#library\"]"
+    },
+    {
+      "name": "search page exposes a query input",
+      "passed": true
+    },
+    {
+      "name": "search returns results for \"engineering\"",
+      "passed": true,
+      "detail": "http://127.0.0.1:3100/search"
+    },
+    {
+      "name": "search does not list the same story twice",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "faculty directory has a search control",
+      "passed": true,
+      "detail": "{\"inputs\":1,\"selects\":1,\"buttons\":[\"Academics+\",\"Menu =\",\"All faculties\",\"Published programmes\",\"Directory entries\"],\"cards\":12}"
+    },
+    {
+      "name": "faculty search filters the directory",
+      "passed": true,
+      "detail": "before=12 after=1"
+    },
+    {
+      "name": "faculty search shows a no-results state",
+      "passed": true,
+      "detail": "Egyptian Chinese University\nStudents\nStaff\nAlumni\nLibrary\nLanguage\nEN\nAR\n中文\nEGYPTIAN\nCHINESE UNIVERSITY\nAbout ECU\nAcademics\n+\nAdmissions\nResearch & innovation\nN"
+    },
+    {
+      "name": "gallery renders published photographs",
+      "passed": true,
+      "detail": "{\"images\":11,\"galleryImages\":9}"
+    },
+    {
+      "name": "contact exposes campus selectors",
+      "passed": true,
+      "detail": "{\"radios\":2,\"mapLinks\":[\"https://www.google.com/maps/dir/?api=1&destination=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.\",\"https://www.google.com/maps/search/?api=1&query=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.\"],\"copyButtons\":[\"Copy address\"],\"telLinks\":[\"tel:19346\",\"tel:19346\",\"tel:19346\"]}"
+    },
+    {
+      "name": "contact exposes Google Maps links",
+      "passed": true,
+      "detail": "[\"https://www.google.com/maps/dir/?api=1&destination=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.\",\"https://www.google.com/maps/search/?api=1&query=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.\"]"
+    },
+    {
+      "name": "contact exposes a copy-address action",
+      "passed": true,
+      "detail": "[\"Copy address\"]"
+    },
+    {
+      "name": "programmes page exposes a comparison control",
+      "passed": true,
+      "detail": "{\"checkboxes\":15,\"compareText\":true,\"items\":15}"
+    },
+    {
+      "name": "admissions links to the official application portal",
+      "passed": true,
+      "detail": "[\"https://admission.ecu.edu.eg/\",\"https://ecu.edu.eg/about-ecu/admission/\",\"https://ecu.edu.eg/about-ecu/admission/\"]"
+    },
+    {
+      "name": "web fonts are loaded by the browser",
+      "passed": true,
+      "detail": "{\"headingFamily\":\"__Manrope_2c2b85, __Manrope_Fallback_2c2b85, Manrope, \\\"Plus Jakarta Sans\\\", Cairo, \\\"Microsoft YaHei\\\", Georgia, serif\",\"loaded\":[\"__Inter_d8ebd1|unloaded\",\"__Inter_d8ebd1|unloaded\",\"__Inter_d8ebd1|unloaded\",\"__Inter_d8ebd1|unloaded\",\"__Inter_d8ebd1|unloaded\",\"__Inter_d8ebd1|unloaded\",\"__Inter_d8ebd1|loaded\",\"__Inter_Fallback_d8ebd1|loaded\",\"__Manrope_2c2b85|unloaded\",\"__Manrope_2c2b85|unloaded\",\"__Manrope_2c2b85|unloaded\",\"__Manrope_2c2b85|unloaded\"],\"count\":353}"
+    }
+  ],
+  "invalidResults": [
+    {
+      "route": "/faculties/not-a-faculty",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/faculties/not-a-faculty"
+    },
+    {
+      "route": "/faculties/law/extra",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/faculties/law/extra"
+    },
+    {
+      "route": "/programmes/not-a-faculty/not-a-programme",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/programmes/not-a-faculty/not-a-programme"
+    },
+    {
+      "route": "/programmes/engineering-and-technology/not-a-programme",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/programmes/engineering-and-technology/not-a-programme"
+    },
+    {
+      "route": "/programmes/engineering-and-technology",
+      "status": 200,
+      "redirectStatus": 307,
+      "finalPath": "/faculties/engineering-and-technology"
+    },
+    {
+      "route": "/news/not-a-story",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/news/not-a-story"
+    },
+    {
+      "route": "/events/not-an-event",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/events/not-an-event"
+    },
+    {
+      "route": "/this-route-does-not-exist",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/this-route-does-not-exist"
+    },
+    {
+      "route": "/campus-life/not-a-section",
+      "status": 404,
+      "redirectStatus": null,
+      "finalPath": "/campus-life/not-a-section"
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "ms": 1132,
+      "title": "Egyptian Chinese University | ECU",
+      "h1": "Build what comes next.",
+      "canonical": "http://127.0.0.1:3100/en",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 4,
+      "textLength": 5039,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        }
+      ]
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "ms": 683,
+      "title": "About ECU | Egyptian Chinese University",
+      "h1": "A university shaped by education and connection.",
+      "canonical": "http://127.0.0.1:3100/en/about",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 2789,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/about-ecu/vision-mission-and-objectives/",
+          "text": "Read source ->"
+        }
+      ]
+    },
+    {
+      "route": "/achievements",
+      "status": 200,
+      "ms": 655,
+      "title": "Hall of Achievements | Egyptian Chinese University",
+      "h1": "A space for evidence-backed recognition.",
+      "canonical": "http://127.0.0.1:3100/en/achievements",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1371,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/news/",
+          "text": "Review official ECU news ->"
+        }
+      ]
+    },
+    {
+      "route": "/admissions",
+      "status": 200,
+      "ms": 643,
+      "title": "Admissions | Egyptian Chinese University",
+      "h1": "Find the requirements before you apply.",
+      "canonical": "http://127.0.0.1:3100/en/admissions",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 3302,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/about-ecu/admission/",
+          "text": "Open admissions ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/about-ecu/admission/",
+          "text": "Read the official source ->"
+        }
+      ]
+    },
+    {
+      "route": "/campus-life",
+      "status": 200,
+      "ms": 706,
+      "title": "Campus Life | Egyptian Chinese University",
+      "h1": "Experience learning beyond the timetable.",
+      "canonical": "http://127.0.0.1:3100/en/campus-life",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 5,
+      "textLength": 3596,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/general-foundation-years/",
+          "text": "Read official source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/digital-journalism-and-graphic-design/",
+          "text": "Read official source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/audio-and-visual-production/",
+          "text": "Read official source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/integrated-marketing-communication/",
+          "text": "Read official source ->"
+        }
+      ]
+    },
+    {
+      "route": "/campus-life/activities",
+      "status": 200,
+      "ms": 669,
+      "title": "Campus Activities | Egyptian Chinese University",
+      "h1": "Published activity records, kept in context.",
+      "canonical": "http://127.0.0.1:3100/en/campus-life/activities",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 3504,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        }
+      ]
+    },
+    {
+      "route": "/campus-life/facilities",
+      "status": 200,
+      "ms": 642,
+      "title": "Campus Facilities | Egyptian Chinese University",
+      "h1": "Facilities published with evidence.",
+      "canonical": "http://127.0.0.1:3100/en/campus-life/facilities",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1249,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/central-research-lab/",
+          "text": "Read official source ->"
+        }
+      ]
+    },
+    {
+      "route": "/campus-life/gallery",
+      "status": 200,
+      "ms": 639,
+      "title": "Campus Gallery | Egyptian Chinese University",
+      "h1": "ECU in photographs.",
+      "canonical": "http://127.0.0.1:3100/en/campus-life/gallery",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 11,
+      "textLength": 2428,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/photo-gallery/",
+          "text": "View official source gallery ->"
+        }
+      ]
+    },
+    {
+      "route": "/campus-life/visit",
+      "status": 200,
+      "ms": 623,
+      "title": "Visit ECU | Egyptian Chinese University",
+      "h1": "Plan around published campus information.",
+      "canonical": "http://127.0.0.1:3100/en/campus-life/visit",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1505,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.",
+          "text": "Get directions ->"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&query=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.",
+          "text": "Open Google Maps"
+        },
+        {
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Al%20Hay%20Al%20Asher%2C%20Nasr%20City%2C%20Cairo%2C%20Egypt.",
+          "text": "Get directions ->"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&query=Al%20Hay%20Al%20Asher%2C%20Nasr%20City%2C%20Cairo%2C%20Egypt.",
+          "text": "Open Google Maps"
+        },
+        {
+          "href": "https://ecu.edu.eg/campus-location/",
+          "text": "Confirm official location information ->"
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "ms": 1987,
+      "title": "Visit and Contact ECU | Egyptian Chinese University",
+      "h1": "Two campuses. One ECU community.",
+      "canonical": "http://127.0.0.1:3100/en/contact",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 2954,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/campus-location/",
+          "text": "Official campus source ->"
+        },
+        {
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.",
+          "text": "Get directions ->"
+        },
+        {
+          "href": "https://www.google.com/maps/search/?api=1&query=Gesr%20El%20Suez%20Street%2C%20behind%20Tagneed%20Bridge%2C%20Cairo%2C%20Egypt.",
+          "text": "Open Google Maps"
+        },
+        {
+          "href": "https://ecu.edu.eg/campus-location/",
+          "text": "Official location source ->"
+        },
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Official application portaladmission.ecu.edu.eg"
+        },
+        {
+          "href": "https://ecu.edu.eg/contact-us/",
+          "text": "Official contact pageECU"
+        },
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Application portaladmission.ecu.edu.eg"
+        },
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "ECU application portal"
+        },
+        {
+          "href": "https://ecu.edu.eg/contact-us/",
+          "text": "ECU Contact Us (2026-10-21)"
+        },
+        {
+          "href": "https://ecu.edu.eg/campus-location/",
+          "text": "ECU Campus Location (2026-10-21)"
+        }
+      ]
+    },
+    {
+      "route": "/events",
+      "status": 200,
+      "ms": 621,
+      "title": "ECU Events and Activities | Egyptian Chinese University",
+      "h1": "Explore dated ECU activity records.",
+      "canonical": "http://127.0.0.1:3100/en/events",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 7,
+      "textLength": 4448,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/news/",
+          "text": "Open official ECU news ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/activity-media-ad-workshop",
+      "status": 200,
+      "ms": 677,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Advertising industry workshop",
+      "canonical": "http://127.0.0.1:3100/en/events/activity-media-ad-workshop",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1155,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/activity-media-akhbar",
+      "status": 200,
+      "ms": 653,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "First-year Mass Communication visit to Akhbar Al-Youm",
+      "canonical": "http://127.0.0.1:3100/en/events/activity-media-akhbar",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1175,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/activity-media-cartoon",
+      "status": 200,
+      "ms": 660,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Press cartooning workshop",
+      "canonical": "http://127.0.0.1:3100/en/events/activity-media-cartoon",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1116,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/activity-media-museum",
+      "status": 200,
+      "ms": 642,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Mass Communication student visit to Grand Egyptian Museum",
+      "canonical": "http://127.0.0.1:3100/en/events/activity-media-museum",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1144,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/activity-media-quality-day",
+      "status": 200,
+      "ms": 630,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Mass Communication quality and academic pathways awareness day",
+      "canonical": "http://127.0.0.1:3100/en/events/activity-media-quality-day",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1156,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/engineering-innovatronics-ministry-collaboration",
+      "status": 200,
+      "ms": 645,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Engineering and Technology industry-collaboration activity",
+      "canonical": "http://127.0.0.1:3100/en/events/engineering-innovatronics-ministry-collaboration",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1349,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/mass-activity-military-culture-exhibition-2025",
+      "status": 200,
+      "ms": 655,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Participation in the Military Culture Exhibition",
+      "canonical": "http://127.0.0.1:3100/en/events/mass-activity-military-culture-exhibition-2025",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1150,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/mass-activity-stand-with-us-seminar-2025",
+      "status": 200,
+      "ms": 612,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Participation in the Stand With Us seminar",
+      "canonical": "http://127.0.0.1:3100/en/events/mass-activity-stand-with-us-seminar-2025",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1204,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/events/mass-activity-welcoming-new-students-2025",
+      "status": 200,
+      "ms": 666,
+      "title": "ECU Activity | Egyptian Chinese University",
+      "h1": "Welcoming new students",
+      "canonical": "http://127.0.0.1:3100/en/events/mass-activity-welcoming-new-students-2025",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1110,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/student-activities/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties",
+      "status": 200,
+      "ms": 679,
+      "title": "Faculties | Egyptian Chinese University",
+      "h1": "Explore ECU faculties",
+      "canonical": "http://127.0.0.1:3100/en/faculties",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1819,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/arts-and-design",
+      "status": 200,
+      "ms": 663,
+      "title": "Arts and Design | Egyptian Chinese University",
+      "h1": "Arts and Design",
+      "canonical": "http://127.0.0.1:3100/en/faculties/arts-and-design",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1441,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/arts-and-design",
+          "text": "Open Arts and Design source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/computers-and-information-systems",
+      "status": 200,
+      "ms": 644,
+      "title": "Computers and Information Systems | Egyptian Chinese University",
+      "h1": "Computers and Information Systems",
+      "canonical": "http://127.0.0.1:3100/en/faculties/computers-and-information-systems",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1758,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/computers-and-information-systems/",
+          "text": "Open Computers and Information Systems source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/economics-and-international-trade",
+      "status": 200,
+      "ms": 683,
+      "title": "Economics and International Trade | Egyptian Chinese University",
+      "h1": "Economics and International Trade",
+      "canonical": "http://127.0.0.1:3100/en/faculties/economics-and-international-trade",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 2113,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/economics-and-international-trade",
+          "text": "Open Economics and International Trade source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/engineering-and-technology",
+      "status": 200,
+      "ms": 662,
+      "title": "Engineering and Technology | Egyptian Chinese University",
+      "h1": "Engineering and Technology",
+      "canonical": "http://127.0.0.1:3100/en/faculties/engineering-and-technology",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 2162,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/",
+          "text": "Open Engineering and Technology source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/humanities-gis-and-surveying",
+      "status": 200,
+      "ms": 670,
+      "title": "Humanities (GIS & Surveying) | Egyptian Chinese University",
+      "h1": "Humanities (GIS & Surveying)",
+      "canonical": "http://127.0.0.1:3100/en/faculties/humanities-gis-and-surveying",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1419,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/humanities",
+          "text": "Open Humanities (GIS & Surveying) source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/law",
+      "status": 200,
+      "ms": 656,
+      "title": "Law | Egyptian Chinese University",
+      "h1": "Law",
+      "canonical": "http://127.0.0.1:3100/en/faculties/law",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1369,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/law",
+          "text": "Open Law source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/literary-studies",
+      "status": 200,
+      "ms": 632,
+      "title": "Literary Studies | Egyptian Chinese University",
+      "h1": "Literary Studies",
+      "canonical": "http://127.0.0.1:3100/en/faculties/literary-studies",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1395,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/literary-studies",
+          "text": "Open Literary Studies source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/mass-communication",
+      "status": 200,
+      "ms": 684,
+      "title": "Mass Communication | Egyptian Chinese University",
+      "h1": "Mass Communication",
+      "canonical": "http://127.0.0.1:3100/en/faculties/mass-communication",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 3002,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/digital-journalism-and-graphic-design/",
+          "text": "Digital Journalism and Graphic DesignRead official department source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/audio-and-visual-production/",
+          "text": "Audio-Visual ProductionRead official department source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/integrated-marketing-communication/",
+          "text": "Integrated Marketing CommunicationRead official department source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/general-foundation-years/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/digital-journalism-and-graphic-design/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/audio-and-visual-production/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media/integrated-marketing-communication/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/media",
+          "text": "Open Mass Communication source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/nursing",
+      "status": 200,
+      "ms": 677,
+      "title": "Nursing | Egyptian Chinese University",
+      "h1": "Nursing",
+      "canonical": "http://127.0.0.1:3100/en/faculties/nursing",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1377,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/nursing",
+          "text": "Open Nursing source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/pharmacy-and-drug-technology",
+      "status": 200,
+      "ms": 649,
+      "title": "Pharmacy and Drug Technology | Egyptian Chinese University",
+      "h1": "Pharmacy and Drug Technology",
+      "canonical": "http://127.0.0.1:3100/en/faculties/pharmacy-and-drug-technology",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1487,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/pharmacy-drug-technology/",
+          "text": "Open Pharmacy and Drug Technology source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/physical-therapy",
+      "status": 200,
+      "ms": 641,
+      "title": "Physical Therapy | Egyptian Chinese University",
+      "h1": "Physical Therapy",
+      "canonical": "http://127.0.0.1:3100/en/faculties/physical-therapy",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1463,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/physical-therapy",
+          "text": "Open Physical Therapy source ->"
+        }
+      ]
+    },
+    {
+      "route": "/faculties/veterinary-medicine",
+      "status": 200,
+      "ms": 685,
+      "title": "Veterinary Medicine | Egyptian Chinese University",
+      "h1": "Veterinary Medicine",
+      "canonical": "http://127.0.0.1:3100/en/faculties/veterinary-medicine",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 2043,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/veterinary-medicine/",
+          "text": "Read official faculty source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/veterinary-medicine",
+          "text": "Open Veterinary Medicine source ->"
+        }
+      ]
+    },
+    {
+      "route": "/news",
+      "status": 200,
+      "ms": 684,
+      "title": "ECU News | Egyptian Chinese University",
+      "h1": "Stories from the university archive.",
+      "canonical": "http://127.0.0.1:3100/en/news",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 6,
+      "textLength": 2192,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        }
+      ]
+    },
+    {
+      "route": "/news-events",
+      "status": 200,
+      "ms": 672,
+      "title": "News and Events | Egyptian Chinese University",
+      "h1": "Stay close to ECU updates.",
+      "canonical": "http://127.0.0.1:3100/en/news-events",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1215,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/news/",
+          "text": "Visit official news ->"
+        }
+      ]
+    },
+    {
+      "route": "/news/news-pharmacists-2024",
+      "status": 200,
+      "ms": 636,
+      "title": "ECU News Story | Egyptian Chinese University",
+      "h1": "Cooperation protocol with Cairo Pharmacists Syndicate",
+      "canonical": "http://127.0.0.1:3100/en/news/news-pharmacists-2024",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1272,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/cooperation-protocol-with-the-cairo-pharmacists-syndicate/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/news/news-shanghai-2024",
+      "status": 200,
+      "ms": 661,
+      "title": "ECU News Story | Egyptian Chinese University",
+      "h1": "Our Students from Shanghai University in China",
+      "canonical": "http://127.0.0.1:3100/en/news/news-shanghai-2024",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 3,
+      "textLength": 1243,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/our-students-from-shanghai-university-in-china/",
+          "text": "Open original ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes",
+      "status": 200,
+      "ms": 679,
+      "title": "Academic Programmes | Egyptian Chinese University",
+      "h1": "Find an academic programme",
+      "canonical": "http://127.0.0.1:3100/en/programmes",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 3872,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/computers-and-information-systems/artificial-intelligence",
+      "status": 200,
+      "ms": 660,
+      "title": "Artificial Intelligence | Egyptian Chinese University",
+      "h1": "Artificial Intelligence",
+      "canonical": "http://127.0.0.1:3100/en/programmes/computers-and-information-systems/artificial-intelligence",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1142,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/computers-and-information-systems/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/computers-and-information-systems/computer-science",
+      "status": 200,
+      "ms": 658,
+      "title": "Computer Science | Egyptian Chinese University",
+      "h1": "Computer Science",
+      "canonical": "http://127.0.0.1:3100/en/programmes/computers-and-information-systems/computer-science",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1135,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/computers-and-information-systems/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/computers-and-information-systems/cybersecurity",
+      "status": 200,
+      "ms": 696,
+      "title": "Cybersecurity | Egyptian Chinese University",
+      "h1": "Cybersecurity",
+      "canonical": "http://127.0.0.1:3100/en/programmes/computers-and-information-systems/cybersecurity",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1132,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/computers-and-information-systems/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/computers-and-information-systems/data-sciences",
+      "status": 200,
+      "ms": 648,
+      "title": "Data Sciences | Egyptian Chinese University",
+      "h1": "Data Sciences",
+      "canonical": "http://127.0.0.1:3100/en/programmes/computers-and-information-systems/data-sciences",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1132,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/computers-and-information-systems/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/computers-and-information-systems/information-systems",
+      "status": 200,
+      "ms": 634,
+      "title": "Information Systems | Egyptian Chinese University",
+      "h1": "Information Systems",
+      "canonical": "http://127.0.0.1:3100/en/programmes/computers-and-information-systems/information-systems",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1138,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/computers-and-information-systems/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/economics-and-international-trade/accounting",
+      "status": 200,
+      "ms": 659,
+      "title": "Accounting | Egyptian Chinese University",
+      "h1": "Accounting",
+      "canonical": "http://127.0.0.1:3100/en/programmes/economics-and-international-trade/accounting",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1100,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/economics-and-international-trade",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/economics-and-international-trade/finance-and-investment",
+      "status": 200,
+      "ms": 655,
+      "title": "Finance and Investment | Egyptian Chinese University",
+      "h1": "Finance and Investment",
+      "canonical": "http://127.0.0.1:3100/en/programmes/economics-and-international-trade/finance-and-investment",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1126,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/economics-and-international-trade",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/economics-and-international-trade/international-business",
+      "status": 200,
+      "ms": 658,
+      "title": "International Business | Egyptian Chinese University",
+      "h1": "International Business",
+      "canonical": "http://127.0.0.1:3100/en/programmes/economics-and-international-trade/international-business",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1119,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/economics-and-international-trade",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/economics-and-international-trade/international-economics",
+      "status": 200,
+      "ms": 674,
+      "title": "International Economics | Egyptian Chinese University",
+      "h1": "International Economics",
+      "canonical": "http://127.0.0.1:3100/en/programmes/economics-and-international-trade/international-economics",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1112,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/economics-and-international-trade",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/economics-and-international-trade/marketing-and-innovation",
+      "status": 200,
+      "ms": 671,
+      "title": "Marketing and Innovation | Egyptian Chinese University",
+      "h1": "Marketing and Innovation",
+      "canonical": "http://127.0.0.1:3100/en/programmes/economics-and-international-trade/marketing-and-innovation",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1100,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/economics-and-international-trade",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/engineering-and-technology/construction-and-building-engineering",
+      "status": 200,
+      "ms": 642,
+      "title": "Construction and Building Engineering | Egyptian Chinese University",
+      "h1": "Construction and Building Engineering",
+      "canonical": "http://127.0.0.1:3100/en/programmes/engineering-and-technology/construction-and-building-engineering",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1124,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/engineering-and-technology/energy-and-renewable-energy-engineering",
+      "status": 200,
+      "ms": 633,
+      "title": "Energy and Renewable Energy Engineering | Egyptian Chinese University",
+      "h1": "Energy and Renewable Energy Engineering",
+      "canonical": "http://127.0.0.1:3100/en/programmes/engineering-and-technology/energy-and-renewable-energy-engineering",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1142,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/engineering-and-technology/mechatronics-engineering-and-automation",
+      "status": 200,
+      "ms": 649,
+      "title": "Mechatronics Engineering and Automation | Egyptian Chinese University",
+      "h1": "Mechatronics Engineering and Automation",
+      "canonical": "http://127.0.0.1:3100/en/programmes/engineering-and-technology/mechatronics-engineering-and-automation",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1130,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/engineering-and-technology/petroleum-and-gas-engineering",
+      "status": 200,
+      "ms": 666,
+      "title": "Petroleum and Gas Engineering | Egyptian Chinese University",
+      "h1": "Petroleum and Gas Engineering",
+      "canonical": "http://127.0.0.1:3100/en/programmes/engineering-and-technology/petroleum-and-gas-engineering",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1097,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/programmes/engineering-and-technology/software-engineering-and-information-technology",
+      "status": 200,
+      "ms": 645,
+      "title": "Software Engineering and Information Technology | Egyptian Chinese University",
+      "h1": "Software Engineering and Information Technology",
+      "canonical": "http://127.0.0.1:3100/en/programmes/engineering-and-technology/software-engineering-and-information-technology",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1136,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/faculties/engineering-and-technology/",
+          "text": "Open official ECU source ->"
+        }
+      ]
+    },
+    {
+      "route": "/research",
+      "status": 200,
+      "ms": 656,
+      "title": "Research and Innovation | Egyptian Chinese University",
+      "h1": "Research with purpose, partnership and impact.",
+      "canonical": "http://127.0.0.1:3100/en/research",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 4,
+      "textLength": 3158,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/research-plan/",
+          "text": "Read research plan ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/research-plan/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/research-plan/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/central-research-lab/",
+          "text": "Read source ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/central-research-lab/",
+          "text": "Read source ->"
+        }
+      ]
+    },
+    {
+      "route": "/search",
+      "status": 200,
+      "ms": 638,
+      "title": "Search ECU | Egyptian Chinese University",
+      "h1": "Find your way through ECU.",
+      "canonical": "http://127.0.0.1:3100/en/search",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 1061,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        }
+      ]
+    },
+    {
+      "route": "/services",
+      "status": 200,
+      "ms": 645,
+      "title": "University Services | Egyptian Chinese University",
+      "h1": "Choose the right ECU route.",
+      "canonical": "http://127.0.0.1:3100/en/services",
+      "lang": "en",
+      "dir": "ltr",
+      "imgCount": 2,
+      "textLength": 2900,
+      "overflow": 0,
+      "footerCount": 1,
+      "headerCount": 1,
+      "externalLinks": [
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Apply now ->"
+        },
+        {
+          "href": "https://admission.ecu.edu.eg/",
+          "text": "Open official destination ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/research-plan/",
+          "text": "Open official destination ->"
+        },
+        {
+          "href": "https://ecu.edu.eg/library/",
+          "text": "Open official destination ->"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "/about",
+      "from": "/research",
+      "resolved": "http://127.0.0.1:3100/about",
+      "status": 200
+    },
+    {
+      "href": "/achievements",
+      "from": "/news-events",
+      "resolved": "http://127.0.0.1:3100/achievements",
+      "status": 200
+    },
+    {
+      "href": "/admissions",
+      "from": "/faculties/veterinary-medicine",
+      "resolved": "http://127.0.0.1:3100/admissions",
+      "status": 200
+    },
+    {
+      "href": "/campus-life",
+      "from": "/contact",
+      "resolved": "http://127.0.0.1:3100/campus-life",
+      "status": 200
+    },
+    {
+      "href": "/campus-life/activities",
+      "from": "/campus-life",
+      "resolved": "http://127.0.0.1:3100/campus-life/activities",
+      "status": 200
+    },
+    {
+      "href": "/campus-life/facilities",
+      "from": "/campus-life",
+      "resolved": "http://127.0.0.1:3100/campus-life/facilities",
+      "status": 200
+    },
+    {
+      "href": "/campus-life/gallery",
+      "from": "/campus-life",
+      "resolved": "http://127.0.0.1:3100/campus-life/gallery",
+      "status": 200
+    },
+    {
+      "href": "/campus-life/visit",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/campus-life/visit",
+      "status": 200
+    },
+    {
+      "href": "/contact",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/contact",
+      "status": 200
+    },
+    {
+      "href": "/en",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en",
+      "status": 200
+    },
+    {
+      "href": "/en/about",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/about",
+      "status": 200
+    },
+    {
+      "href": "/en/admissions",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/admissions",
+      "status": 200
+    },
+    {
+      "href": "/en/campus-life",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/campus-life",
+      "status": 200
+    },
+    {
+      "href": "/en/campus-life/visit",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/campus-life/visit",
+      "status": 200
+    },
+    {
+      "href": "/en/contact",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/contact",
+      "status": 200
+    },
+    {
+      "href": "/en/faculties",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/faculties",
+      "status": 200
+    },
+    {
+      "href": "/en/news-events",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/news-events",
+      "status": 200
+    },
+    {
+      "href": "/en/programmes",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/programmes",
+      "status": 200
+    },
+    {
+      "href": "/en/research",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/research",
+      "status": 200
+    },
+    {
+      "href": "/en/search",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/search",
+      "status": 200
+    },
+    {
+      "href": "/en/services#alumni",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/services",
+      "status": 200
+    },
+    {
+      "href": "/en/services#library",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/services",
+      "status": 200
+    },
+    {
+      "href": "/en/services#staff",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/services",
+      "status": 200
+    },
+    {
+      "href": "/en/services#students",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/services",
+      "status": 200
+    },
+    {
+      "href": "/en/services",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/en/services",
+      "status": 200
+    },
+    {
+      "href": "/events",
+      "from": "/research",
+      "resolved": "http://127.0.0.1:3100/events",
+      "status": 200
+    },
+    {
+      "href": "/events/activity-media-ad-workshop",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/activity-media-ad-workshop",
+      "status": 200
+    },
+    {
+      "href": "/events/activity-media-akhbar",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/activity-media-akhbar",
+      "status": 200
+    },
+    {
+      "href": "/events/activity-media-cartoon",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/activity-media-cartoon",
+      "status": 200
+    },
+    {
+      "href": "/events/activity-media-museum",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/activity-media-museum",
+      "status": 200
+    },
+    {
+      "href": "/events/activity-media-quality-day",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/activity-media-quality-day",
+      "status": 200
+    },
+    {
+      "href": "/events/engineering-innovatronics-ministry-collaboration",
+      "from": "/campus-life/activities",
+      "resolved": "http://127.0.0.1:3100/events/engineering-innovatronics-ministry-collaboration",
+      "status": 200
+    },
+    {
+      "href": "/events/mass-activity-military-culture-exhibition-2025",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/mass-activity-military-culture-exhibition-2025",
+      "status": 200
+    },
+    {
+      "href": "/events/mass-activity-stand-with-us-seminar-2025",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/mass-activity-stand-with-us-seminar-2025",
+      "status": 200
+    },
+    {
+      "href": "/events/mass-activity-welcoming-new-students-2025",
+      "from": "/events",
+      "resolved": "http://127.0.0.1:3100/events/mass-activity-welcoming-new-students-2025",
+      "status": 200
+    },
+    {
+      "href": "/faculties",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/faculties",
+      "status": 200
+    },
+    {
+      "href": "/faculties/arts-and-design",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/arts-and-design",
+      "status": 200
+    },
+    {
+      "href": "/faculties/computers-and-information-systems",
+      "from": "/programmes/computers-and-information-systems/information-systems",
+      "resolved": "http://127.0.0.1:3100/faculties/computers-and-information-systems",
+      "status": 200
+    },
+    {
+      "href": "/faculties/economics-and-international-trade",
+      "from": "/programmes/economics-and-international-trade/marketing-and-innovation",
+      "resolved": "http://127.0.0.1:3100/faculties/economics-and-international-trade",
+      "status": 200
+    },
+    {
+      "href": "/faculties/engineering-and-technology",
+      "from": "/programmes/engineering-and-technology/software-engineering-and-information-technology",
+      "resolved": "http://127.0.0.1:3100/faculties/engineering-and-technology",
+      "status": 200
+    },
+    {
+      "href": "/faculties/humanities-gis-and-surveying",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/humanities-gis-and-surveying",
+      "status": 200
+    },
+    {
+      "href": "/faculties/law",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/law",
+      "status": 200
+    },
+    {
+      "href": "/faculties/literary-studies",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/literary-studies",
+      "status": 200
+    },
+    {
+      "href": "/faculties/mass-communication",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/mass-communication",
+      "status": 200
+    },
+    {
+      "href": "/faculties/nursing",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/nursing",
+      "status": 200
+    },
+    {
+      "href": "/faculties/pharmacy-and-drug-technology",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/pharmacy-and-drug-technology",
+      "status": 200
+    },
+    {
+      "href": "/faculties/physical-therapy",
+      "from": "/news/news-shanghai-2024",
+      "resolved": "http://127.0.0.1:3100/faculties/physical-therapy",
+      "status": 200
+    },
+    {
+      "href": "/faculties/veterinary-medicine",
+      "from": "/faculties",
+      "resolved": "http://127.0.0.1:3100/faculties/veterinary-medicine",
+      "status": 200
+    },
+    {
+      "href": "/news",
+      "from": "/news/news-shanghai-2024",
+      "resolved": "http://127.0.0.1:3100/news",
+      "status": 200
+    },
+    {
+      "href": "/news-events",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/news-events",
+      "status": 200
+    },
+    {
+      "href": "/news/news-pharmacists-2024",
+      "from": "/news",
+      "resolved": "http://127.0.0.1:3100/news/news-pharmacists-2024",
+      "status": 200
+    },
+    {
+      "href": "/news/news-shanghai-2024",
+      "from": "/research",
+      "resolved": "http://127.0.0.1:3100/news/news-shanghai-2024",
+      "status": 200
+    },
+    {
+      "href": "/programmes",
+      "from": "/services",
+      "resolved": "http://127.0.0.1:3100/programmes",
+      "status": 200
+    },
+    {
+      "href": "/programmes/computers-and-information-systems/artificial-intelligence",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/computers-and-information-systems/artificial-intelligence",
+      "status": 200
+    },
+    {
+      "href": "/programmes/computers-and-information-systems/computer-science",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/computers-and-information-systems/computer-science",
+      "status": 200
+    },
+    {
+      "href": "/programmes/computers-and-information-systems/cybersecurity",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/computers-and-information-systems/cybersecurity",
+      "status": 200
+    },
+    {
+      "href": "/programmes/computers-and-information-systems/data-sciences",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/computers-and-information-systems/data-sciences",
+      "status": 200
+    },
+    {
+      "href": "/programmes/computers-and-information-systems/information-systems",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/computers-and-information-systems/information-systems",
+      "status": 200
+    },
+    {
+      "href": "/programmes/economics-and-international-trade/accounting",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/economics-and-international-trade/accounting",
+      "status": 200
+    },
+    {
+      "href": "/programmes/economics-and-international-trade/finance-and-investment",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/economics-and-international-trade/finance-and-investment",
+      "status": 200
+    },
+    {
+      "href": "/programmes/economics-and-international-trade/international-business",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/economics-and-international-trade/international-business",
+      "status": 200
+    },
+    {
+      "href": "/programmes/economics-and-international-trade/international-economics",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/economics-and-international-trade/international-economics",
+      "status": 200
+    },
+    {
+      "href": "/programmes/economics-and-international-trade/marketing-and-innovation",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/economics-and-international-trade/marketing-and-innovation",
+      "status": 200
+    },
+    {
+      "href": "/programmes/engineering-and-technology/construction-and-building-engineering",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/engineering-and-technology/construction-and-building-engineering",
+      "status": 200
+    },
+    {
+      "href": "/programmes/engineering-and-technology/energy-and-renewable-energy-engineering",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/engineering-and-technology/energy-and-renewable-energy-engineering",
+      "status": 200
+    },
+    {
+      "href": "/programmes/engineering-and-technology/mechatronics-engineering-and-automation",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/engineering-and-technology/mechatronics-engineering-and-automation",
+      "status": 200
+    },
+    {
+      "href": "/programmes/engineering-and-technology/petroleum-and-gas-engineering",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/engineering-and-technology/petroleum-and-gas-engineering",
+      "status": 200
+    },
+    {
+      "href": "/programmes/engineering-and-technology/software-engineering-and-information-technology",
+      "from": "/programmes",
+      "resolved": "http://127.0.0.1:3100/programmes/engineering-and-technology/software-engineering-and-information-technology",
+      "status": 200
+    },
+    {
+      "href": "/research",
+      "from": "/about",
+      "resolved": "http://127.0.0.1:3100/research",
+      "status": 200
+    },
+    {
+      "href": "/search",
+      "from": "/",
+      "resolved": "http://127.0.0.1:3100/search",
+      "status": 200
+    },
+    {
+      "href": "/services",
+      "from": "/contact",
+      "resolved": "http://127.0.0.1:3100/services",
+      "status": 200
+    }
+  ],
+  "responsiveFindings": [],
+  "localeFindings": [
+    {
+      "target": "/en",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Build what comes next.",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/en/faculties",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Explore ECU faculties",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/en/programmes",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Find an academic programme",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/en/contact",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Two campuses. One ECU community.",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/en/campus-life/gallery",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "ECU in photographs.",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/en/news",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Stories from the university archive.",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/en/admissions",
+      "status": 200,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Find the requirements before you apply.",
+      "untranslated": [
+        "Students",
+        "Staff",
+        "Alumni",
+        "Library",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "About ECU",
+        "Academics+",
+        "Admissions",
+        "Research & innovation",
+        "News & events",
+        "Campus life",
+        "Services",
+        "Contact",
+        "Search",
+        "Apply now ->",
+        "Menu ="
+      ]
+    },
+    {
+      "target": "/ar",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "Build what comes next.",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/ar/faculties",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "Explore ECU faculties",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/ar/programmes",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "Find an academic programme",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/ar/contact",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "حرمان جامعيان. مجتمع ECU واحد.",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/ar/campus-life/gallery",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "ECU in photographs.",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/ar/news",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "Stories from the university archive.",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/ar/admissions",
+      "status": 200,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": 0,
+      "h1": "Find the requirements before you apply.",
+      "untranslated": [
+        "الطلاب",
+        "أعضاء هيئة التدريس",
+        "الخريجون",
+        "المكتبة",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "عن ECU",
+        "الدراسة الأكاديمية+",
+        "القبول",
+        "البحث والابتكار",
+        "الأخبار والفعاليات",
+        "الحياة الجامعية",
+        "الخدمات",
+        "تواصل معنا",
+        "بحث",
+        "تقدم الآن ->",
+        "القائمة ="
+      ]
+    },
+    {
+      "target": "/zh",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Build what comes next.",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    },
+    {
+      "target": "/zh/faculties",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Explore ECU faculties",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    },
+    {
+      "target": "/zh/programmes",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Find an academic programme",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    },
+    {
+      "target": "/zh/contact",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "两个校区，同一个 ECU 社区。",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    },
+    {
+      "target": "/zh/campus-life/gallery",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "ECU in photographs.",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    },
+    {
+      "target": "/zh/news",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Stories from the university archive.",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    },
+    {
+      "target": "/zh/admissions",
+      "status": 200,
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "overflow": 0,
+      "h1": "Find the requirements before you apply.",
+      "untranslated": [
+        "学生",
+        "教职员工",
+        "校友",
+        "图书馆",
+        "ENAR中文",
+        "EgyptianChinese University",
+        "关于 ECU",
+        "学术+",
+        "招生",
+        "研究与创新",
+        "新闻与活动",
+        "校园生活",
+        "服务",
+        "联系我们",
+        "搜索",
+        "立即申请 ->",
+        "菜单 ="
+      ]
+    }
+  ],
+  "headerResults": [
+    {
+      "url": "http://127.0.0.1:3100/",
+      "status": 200,
+      "headers": {
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "permissions-policy": "camera=(), microphone=(), geolocation=(), browsing-topics=()",
+        "content-security-policy": "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; img-src 'self' data: blob:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com https://maps.googleapis.com; manifest-src 'self'; upgrade-insecure-requests",
+        "x-powered-by": null
+      }
+    }
+  ]
+}

@@ -27,4 +27,4 @@ export function middleware(request) {
   return response;
 }
 
-export const config = { matcher: ['/((?!_next/static|_next/image|favicon.ico|assets/).*)'] };
+export const config = { matcher: ['/((?!_next/static|_next/image|favicon.ico|assets/|images/|sitemap.xml|robots.txt).*)'] };
